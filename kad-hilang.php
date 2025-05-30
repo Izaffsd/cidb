@@ -46,7 +46,7 @@
 
         .cidb-gantian-pricing h3 {
             font-size: 2rem;
-            color: var(--biru);
+            color: var(--black);
             margin-bottom: 1rem;
         }
 
@@ -91,7 +91,7 @@
 
         .cidb-gantian-info h2 {
             font-size: 2.2rem;
-            color: var(--biru);
+            color: var(--black);
             margin-bottom: 1.5rem;
         }
 
