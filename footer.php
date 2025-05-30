@@ -4,13 +4,32 @@
         <div class="wrapper">
             <h2>Dapatkan Berita Kami!</h2>
             <p>Terima maklumat terkini mengenai jualan, discount dan banyak lagi terus ke Email anda!!</p>
-            <form action="http://www.watsap.my/601126165376/CIDBKadhijauwebsite" target="_blank">
-                <div class="input-container">
-                    <input type="email" id="email" name="email" placeholder="masukkan alamat emel anda" required>
-                    <input type="hidden" id="message" name="text" value="New subscription from email: ">
-                    <button type="submit" class="btn" >Hantar</button>
-                </div>
+           <form id="subscribe-form">
+            <div class="input-container">
+                <input type="email" name="user_email" placeholder="Masukkan alamat emel anda" required />
+                <button type="submit" class="btn">Hantar</button>
+            </div>
             </form>
+
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
+            (function() {
+                emailjs.init("EY3VYsv8aIt7Ms0oC"); // Your public key
+            })();
+
+            document.getElementById("subscribe-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                emailjs.sendForm('contact_template', 'template_856pmar', this)
+                .then(() => {
+                    alert("Terima kasih! Emel anda telah dihantar.");
+                    this.reset();
+                }, (error) => {
+                    alert("Ralat semasa menghantar emel. Sila cuba lagi.");
+                    console.error(error);
+                });
+            });
+            </script>
         </div>
     </div>
 
