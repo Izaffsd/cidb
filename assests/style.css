@@ -293,7 +293,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         right: -100%;
         background: white;
         width: 52%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 20px);
         padding: 1.5rem;
         flex-direction: column;
         transition: right 0.3s ease;
@@ -304,7 +304,7 @@ header .navbar li .nested-dropdown-menu a:hover {
     }
 
     header .navbar li {
-        margin: 1.4rem 0;
+        margin: 0.4rem 0;
     }
 
     header .navbar li a {
@@ -312,7 +312,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         padding: 0.2rem;
         color: black;
         font-weight: bold;
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
 
     header .navbar li .dropdown-menu,

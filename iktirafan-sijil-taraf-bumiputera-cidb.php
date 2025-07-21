@@ -4,22 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- <link rel="stylesheet" href="./assests/style.css"> -->
+  <!-- <link rel="stylesheet" href="./assests/style.css"> -->
 
-    <!-- RemixIcons CDN -->
+  <!-- RemixIcons CDN -->
 
-    <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
 
-    <link href="
+  <link href="
     https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
     " rel="stylesheet">
 
-    <?php include 'header-cidb.php' ?>
+  <?php include 'header-cidb.php' ?>
 
-<!-- header ends -->
+  <!-- header ends -->
 
   <style>
-    /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
     :root {
       /* Your original color palette */
@@ -479,6 +479,13 @@
 </head>
 
 <body>
+  <section class="home1" id="home1">
+    <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
+    <div class="content1">
+      <h2>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB</h2>
+      <p>Persediaan Dokumen untuk Permohonan, Pembaharuan, atau Perubahan Maklumat</p>
+    </div>
+  </section>
   <div class="floating-elements">
     <div class="floating-circle"></div>
     <div class="floating-circle"></div>
@@ -486,16 +493,11 @@
   </div>
 
   <div class="container">
-    <div class="hero-header">
-      <h1>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB</h1>
-      <p>Persediaan Dokumen untuk Permohonan, Pembaharuan, atau Perubahan Maklumat</p>
-    </div>
-
     <div class="image-section">
       <div class="image-container">
-        <img src="bumi-putera-cidb.jpg" alt="Contoh Premis dan Dokumen STB CIDB">
+        <img src="bumi-putera-cidb.jpg" alt="PANDUAN PENGIKTIRAFAN SIJIL TARAF BUMIPUTERA CIDB">
         <div class="image-overlay">
-          Contoh Premis Operasi Syarikat dan Dokumen Berkaitan
+         PANDUAN PENGIKTIRAFAN SIJIL TARAF BUMIPUTERA CIDB
         </div>
       </div>
     </div>

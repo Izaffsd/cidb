@@ -110,6 +110,8 @@
         <li><a href="index.php">Services</a></li>
         <li><a href="index.php">Blog</a></li>
         <li><a href="index.php">Operation</a></li>
+        <li><a href="iktirafan-sijil-taraf-bumiputera-cidb.php">Sijil</a></li>
+        
     </ul>
 </header>
 <!-- header ends -->
