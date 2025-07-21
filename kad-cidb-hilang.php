@@ -157,7 +157,7 @@
 </head>
 <body>
     <!-- header starts -->
-    <?php include 'header.php' ?>
+    <?php include 'header-cidb.php' ?>
     <!-- header ends -->
 
     <section class="home1" id="home1">
@@ -205,7 +205,7 @@
         </div>
     </div>
 
-<?php  include 'footer.php' ?> 
+<?php  include 'footer-cidb.php' ?> 
 
 </body>
 </html>

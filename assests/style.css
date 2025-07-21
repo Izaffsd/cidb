@@ -24,7 +24,6 @@
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
     outline: none; border: none;
-    text-transform: capitalize;
     transition: all .1s linear;
 }
 *::selection {
@@ -1518,7 +1517,6 @@ header .navbar li .nested-dropdown-menu a:hover {
     color: white;
     border-radius: .3rem;
     font-size: 1.7rem;
-    text-transform: uppercase;
     font-weight: 700;
     margin: 1.5rem auto;
     cursor: pointer;
@@ -2101,10 +2099,7 @@ header .navbar li .nested-dropdown-menu a:hover {
 }
 
 .footer .newsletter .input-container {
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 40%;
     align-items: center;
     margin-top: 1rem;
     gap: 1rem;
@@ -2113,6 +2108,7 @@ header .navbar li .nested-dropdown-menu a:hover {
 .footer .newsletter .input-container input {
     font-size: 1.5rem;
     border-radius: 2rem;
+    text-transform: none;
     width: 60%;
     padding: 1rem;
     padding-left: 2rem;

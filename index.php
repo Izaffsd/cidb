@@ -189,10 +189,10 @@ if (extension_loaded('zlib')) {
         <li class="dropdown">
             <a style="cursor: pointer;">Card<span class="arrow-down">&#x25BE;</span></a>
             <ul class="dropdown-menu">
-                <li><a href="card.php">Apa itu Kad CIDB</a></li>
-                <li><a href="daftar-baru.php">Daftar Baru</a></li>
-                <li><a href="renew-kad.php">Pembaharuan Kad</a></li>
-                <li><a href="kad-hilang.php">Gantian Kad Hilang</a></li>
+                <li><a href="card-cidb.php">Apa itu Kad CIDB</a></li>
+                <li><a href="daftar-baru-cidb.php">Daftar Baru</a></li>
+                <li><a href="renew-kad-cidb.php">Pembaharuan Kad</a></li>
+                <li><a href="kad-cidb-hilang.php">Gantian Kad Hilang</a></li>
             </ul>
         </li>
         <li><a href="#projects">Services</a></li>
@@ -274,7 +274,7 @@ if (extension_loaded('zlib')) {
         <div class="certificate-section">
             <!-- Image Container -->
             <div class="image">
-                <a href="card.php">
+                <a href="card-cidb.php">
                     <img src="./assests/images/project/kad-personel-binaan-baru-cidb.jpg" alt="CIDB Kad Hijau Image">
                 </a>
             </div>
@@ -286,7 +286,7 @@ if (extension_loaded('zlib')) {
                     Setiap pekerja binaan (tempatan/asing) WAJIB memiliki Kad Hijau yang sah selaras dengan Seksyen 33, Akta CIDB 520.
                     Berkuatkuasa mulai 15 Oktober 2019.
                 </p>
-                <a href="card.php" class="btn primary-btn">Apa itu Kad Hijau CIDB</a>
+                <a href="card-cidb.php" class="btn primary-btn">Apa itu Kad Hijau CIDB</a>
                 <a href="https://cims.cidb.gov.my/pbsearch/Forms/Transactions/search.aspx" class="btn secondary-btn">Semak Status Kad Hijau Anda</a>
             </div>
         </div>
@@ -553,6 +553,7 @@ if (extension_loaded('zlib')) {
                 <img src="./assests/images/life/kadhijau4.jpg" alt="CIDB Kad Hijau Image 4" class="lifeimg">
                 <img src="./assests/images/life/kadhijau5.jpg" alt="CIDB Kad Hijau Image 5" class="lifeimg">
                 <img src="./assests/images/life/kadhijau6.jpg" alt="CIDB Kad Hijau Image 6" class="lifeimg">
+                <img src="./assests/images/life/sijil.jpg" alt="CIDB Kad Hijau Image 6" class="lifeimg">
             </div>
             <span id="next" class="prev-next fas fa-chevron-right"></span>
             
@@ -624,7 +625,7 @@ if (extension_loaded('zlib')) {
     </a>
 
 
-<?php include 'footer.php' ?>
+<?php include 'footer-cidb.php' ?>
 
   <!-- Structured Data for FAQ -->
   <script type="application/ld+json">
@@ -664,12 +665,12 @@ if (extension_loaded('zlib')) {
     </script>
     <?php endif; ?>
 
-    <div id="cookie-consent" class="cookie-banner" style="display: none;">
+    <!-- <div id="cookie-consent" class="cookie-banner" style="display: none;">
         <p>
            <a href="privacy-policy.php"></a>
         </p>
         <button id="accept-cookies"></button>
-    </div>
+    </div> -->
 
     <script>
         // Cookie Consent Handler
@@ -684,7 +685,7 @@ if (extension_loaded('zlib')) {
     </script>
 
     <script type="application/ld+json">
-    {
+     {
       "@context": "https://schema.org",
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [

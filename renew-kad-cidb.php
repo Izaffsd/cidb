@@ -165,7 +165,7 @@
     </style>
 </head>
 <body>
-    <?php include 'header.php' ?>
+    <?php include 'header-cidb.php' ?>
 
     <section class="home1" id="home1">
         <img src="kad-cidb.jpg" alt="Home background" class="background-image1">
@@ -228,7 +228,7 @@
         </div>
     </div>
 
-<?php  include 'footer.php' ?> 
+<?php  include 'footer-cidb.php' ?> 
 
 </body>
 </html> 

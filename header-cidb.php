@@ -102,10 +102,10 @@
         <li class="dropdown">
             <a style="cursor: pointer;">Card<span class="arrow-down">&#x25BE;</span></a>
             <ul class="dropdown-menu">
-                <li><a href="card.php">Apa itu Kad CIDB</a></li>
-                <li><a href="daftar-baru.php">Daftar Baru</a></li>
-                <li><a href="renew-kad.php">Pembaharuan Kad</a></li>
-                <li><a href="kad-hilang.php">Gantian Kad Hilang</a></li>
+                <li><a href="card-cidb.php">Apa itu Kad CIDB</a></li>
+                <li><a href="daftar-baru-cidb.php">Daftar Baru</a></li>
+                <li><a href="renew-kad-cidb.php">Pembaharuan Kad</a></li>
+                <li><a href="kad-cidb-hilang.php">Gantian Kad Hilang</a></li>
             </ul>
         </li>
         <li><a href="index.php">Services</a></li>
