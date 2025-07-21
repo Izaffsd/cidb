@@ -86,7 +86,6 @@
     <link rel="canonical" href="https://cidbkadhijau.com">
 
      <!-- Critical CSS -->
-    <link rel="stylesheet" href="critical.min.css" media="all">
 </head>
 <body>
 

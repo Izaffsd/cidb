@@ -1,26 +1,11 @@
-<?php
-// Advanced caching and performance headers
-header('Cache-Control: max-age=31536000, public');
-header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + 31536000));
-header('Vary: Accept-Encoding');
-header('Link: <critical.min.css>; rel=preload; as=style, <kad-cidb.jpg>; rel=preload; as=image');
 
-// Implement HTTP/2 Server Push for critical assets
-if (function_exists('apache_get_modules') && in_array('mod_http2', apache_get_modules())) {
-    header('Link: </critical.min.css>; rel=preload; as=style, </kad-cidb.jpg>; rel=preload; as=image', true);
-}
-
-// Dynamic content compression
-if (extension_loaded('zlib')) {
-    ob_start('ob_gzhandler');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="manifest" href="/manifest.json">
 
     <!-- Title Tag -->
     <title>CIDB Kad Hijau - Renew Kad Hijau CIDB Secara Online</title>
@@ -171,9 +156,6 @@ if (extension_loaded('zlib')) {
     <link rel="canonical" href="https://cidbkadhijau.com">
 
      <!-- Critical CSS -->
-    <link rel="stylesheet" href="critical.min.css" media="all">
-    <link rel="preload" href="critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="critical.min.css"></noscript>
 </head>
 <body>
 
