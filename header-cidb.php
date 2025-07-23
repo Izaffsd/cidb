@@ -35,9 +35,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-        
 /* Header Styles */
 header {
+    font-size: 62.5%; /* Base font size for rem units */
+
     font-family: 'Nunito', sans-serif;
     position: fixed;
     top: 0;

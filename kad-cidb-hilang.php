@@ -7,6 +7,7 @@
     <title>Gantian Kad CIDB - MEWAH SERVICES</title>
     <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
     <link rel="stylesheet" href="./assests/style.css">
+    <?php include 'seo.php'; ?>
 
     <style>
         /* Gantian Kad Container */
@@ -204,7 +205,8 @@
             </ul>
         </div>
     </div>
-
+<?php include 'whatapps-cidb.php'; ?>
+    
 <?php  include 'footer-cidb.php' ?> 
 
 </body>
