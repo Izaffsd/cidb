@@ -5,184 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="manifest" href="/manifest.json">
 
-    <!-- Title Tag -->
-    <title>CIDB Kad Hijau - Renew Kad Hijau CIDB Secara Online</title>
-    <meta name="description" content="Renew kad hijau CIDB & Daftar CIDB secara online dengan cepat di CIDBKadHijau.com." />
-    <meta name="keywords" content="CIDB, Kad Hijau, Renew CIDB, Daftar CIDB, Malaysia, Portal CIDB, Pendaftaran Kontraktor, Lesen Binaan Malaysia">
-
-    <!-- Comprehensive Robots Meta -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:160, max-video-preview:60">
-    <meta name="googlebot" content="index, follow, snippet, archive">
-
-    <!-- JSON-LD Schema Markup -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [{
-                    "@type": "WebPage",
-                    "@id": "https://cidbkadhijau.com/",
-                    "url": "https://cidbkadhijau.com/",
-                    "name": "CIDB Kad Hijau - Renew Kad Hijau CIDB Secara Online",
-                    "description": "Renew kad hijau CIDB & Daftar CIDB dengan cepat di CIDB Kad Hijau secara online.",
-
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "CIDB Kad Hijau",
-                        "url": "https://cidbkadhijau.com/",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://cidbkadhijau.com/icon.png"
-                        }
-                    },
-                    "mainEntityOfPage": "https://cidbkadhijau.com/"
-                },
-
-            ]
-        } {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Mewah Services CIDB - Khidmat 24 Jam",
-            "image": "https://cidbkadhijau.com/icon.png",
-            "description": "Pakar pembaharuan dan pendaftaran Kad Hijau CIDB Malaysia. Perkhidmatan 24 jam dengan proses express dan profesional.",
-            "@id": "https://cidbkadhijau.com",
-            "url": "https://cidbkadhijau.com",
-            "telephone": ["+601126165376", "+60169743112"],
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "YOUR_ADDRESS",
-                "addressLocality": "YOUR_CITY",
-                "postalCode": "YOUR_POSTCODE",
-                "addressCountry": "MY"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": YOUR_LATITUDE,
-                "longitude": YOUR_LONGITUDE
-            },
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "YOUR_FACEBOOK_URL",
-                "YOUR_INSTAGRAM_URL",
-                "YOUR_LINKEDIN_URL"
-            ],
-            "priceRange": "$$",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "250"
-            },
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Perkhidmatan CIDB 24 Jam",
-                "itemListElement": [{
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Pembaharuan Express Kad Hijau CIDB",
-                            "description": "Perkhidmatan pembaharuan kad CIDB dalam masa 24 jam",
-                            "price": "YOURPRICE",
-                            "priceCurrency": "MYR"
-                        }
-                    },
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Pendaftaran Kad Hijau Baru",
-                            "description": "Pendaftaran kad hijau baru dengan proses yang cepat",
-                            "price": "YOURPRICE",
-                            "priceCurrency": "MYR"
-                        }
-                    }
-                ]
-            }
-        }
-    </script>
-
-    <!-- Open Graph Enhanced -->
-    <meta property="og:locale" content="ms_MY">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="CIDB Kad Hijau - Portal Rasmi Renewal">
-    <meta property="og:description" content="Platform rasmi untuk renewal dan pendaftaran Kad Hijau CIDB Malaysia">
-    <meta property="og:url" content="https://cidbkadhijau.com">
-    <meta property="og:site_name" content="CIDB Kad Hijau">
-    <meta property="og:image" content="https://cidbkadhijau.com/icon.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <link rel="amphtml" href="https://cidbkadhijau.com/">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CIDB Kad Hijau">
-    <meta name="twitter:description" content="Portal rasmi renewal Kad Hijau CIDB">
-
-    <!-- PWA Support -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0A6E3D">
-    <link rel="apple-touch-icon" href="icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
-
-
+<?php include 'seo.php' ?>
 
     <link rel="stylesheet" href="./assests/style.css">
 
-    <!-- RemixIcons CDN -->
-    <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
-
-    <!-- Performance Optimization -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-
-    <!-- Performance Script Loading -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async defer></script>
-
-    <!-- Web App Capabilities -->
-    <meta name="application-name" content="CIDB Kad Hijau">
-    <meta name="theme-color" content="#0A6E3D">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://cidbkadhijau.com">
-
-    <!-- Critical CSS -->
 </head>
 
 <body>
 
     <!-- header ends -->
 
-    <header>
-        <a href="#home" class="logo">MEWAH SERVICES</a>
-        <div id="menu-bar" class="ri-menu-3-line"></div>
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
-                <a style="cursor: pointer;">Card<span class="arrow-down">&#x25BE;</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="card-cidb.php">Apa itu Kad CIDB</a></li>
-                    <li><a href="daftar-baru-cidb.php">Daftar Baru</a></li>
-                    <li><a href="renew-kad-cidb.php">Pembaharuan Kad</a></li>
-                    <li><a href="kad-cidb-hilang.php">Gantian Kad Hilang</a></li>
-
-                </ul>
-            </li>
-            <li><a href="#projects">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#operasi">Operation</a></li>
-            <li><a href="kad-cidb-hilang.php">Sijil</a></li>
-
-        </ul>
-    </header>
+<?php include 'header-cidb.php'; ?>
+    
 
     <!-- header ends -->
     <!-- home section starts -->
@@ -658,17 +494,7 @@
         <button id="accept-cookies"></button>
     </div> -->
 
-    <script>
-        // Cookie Consent Handler
-        if (!localStorage.getItem('cookieConsent')) {
-            document.getElementById('cookie-consent').style.display = 'block';
-        }
 
-        document.getElementById('accept-cookies').addEventListener('click', function() {
-            localStorage.setItem('cookieConsent', 'true');
-            document.getElementById('cookie-consent').style.display = 'none';
-        });
-    </script>
 
     <script type="application/ld+json">
         {

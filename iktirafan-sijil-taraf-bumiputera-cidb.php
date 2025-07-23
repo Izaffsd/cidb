@@ -4,709 +4,369 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./assests/style.css"> -->
-
-  <!-- RemixIcons CDN -->
-
+  <title>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB - Panduan Permohonan</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
   <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
-
-  <link href="
-    https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
-    " rel="stylesheet">
-
-  <?php include 'header-cidb.php' ?>
-
-  <!-- header ends -->
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assests/style.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-    :root {
-      /* Your original color palette */
-      --birumuda: #2dd6c1;
-      --maing: #28a38c;
-      --shadowg: #0cad98;
-      --teal: #025e53;
-      --background: #d8fff8;
-      --biru: #005B96;
-      --teks: #FFFFFF;
-      --gray-50: #f8fafc;
-      --gray-100: #f1f5f9;
-      --gray-600: #475569;
-      --gray-800: #1e293b;
-
-      /* Enhanced variations of your colors */
-      --birumuda-light: #5ee4d3;
-      --birumuda-dark: #1ab5a1;
-      --maing-light: #4bb5a2;
-      --maing-dark: #1e8a73;
-      --teal-light: #0a8a79;
-      --teal-dark: #014238;
-      --biru-light: #2575b8;
-      --biru-dark: #003d6b;
-
-      /* Additional grays for better contrast */
-      --gray-200: #e2e8f0;
-      --gray-300: #cbd5e1;
-      --gray-700: #334155;
-      --gray-900: #0f172a;
-      --white: #ffffff;
-
-      /* Shadows and effects */
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-      --blur-backdrop: blur(20px);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--white);
-      min-height: 100vh;
-      color: var(--gray-800);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    .hero-header {
-      background: linear-gradient(135deg, var(--birumuda), var(--maing));
-      color: var(--teks);
-      padding: 3rem 2rem;
-      text-align: center;
-      border-radius: 16px;
-      margin-bottom: 3rem;
-      box-shadow: 0 8px 32px rgba(45, 214, 193, 0.15);
-      position: relative;
+    .home1 {
       overflow: hidden;
-    }
-
-    .hero-header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-      opacity: 0;
-      animation: shimmer 3s ease-in-out infinite;
-      z-index: 1;
-    }
-
-    .hero-header h1,
-    .hero-header p {
       position: relative;
-      z-index: 2;
-    }
-
-    .hero-header h1 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      line-height: 1.2;
-    }
-
-    .hero-header p {
-      font-size: 1.25rem;
-      color: rgba(255, 255, 255, 0.95);
-      font-weight: 400;
-      margin-bottom: 2rem;
-    }
-
-    .image-section {
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-      opacity: 0;
-      animation: fadeInUp 0.6s ease-out 0.3s forwards;
-    }
-
-    .image-container {
-      position: relative;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      max-width: 800px;
-      /* Increased from 500px */
-      width: 90%;
-      /* Use 90% of available width */
-      max-height: 85vh;
-      /* Prevent overflow on smaller screens */
-    }
-
-    .image-container:hover {
-      transform: translateY(-5px) scale(1.02);
-      box-shadow: var(--shadow-xl);
-    }
-
-    .image-container img {
       width: 100%;
-      height: 80vh;
-      /* Increased from 70vh */
-      object-fit: contain;
-      /* Changed from 'cover' to 'contain' to show all image content */
-      display: block;
-      background-color: #f8f9fa;
-      /* Optional: light background for letterboxing */
-    }
-
-    .image-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.875rem;
-      font-weight: 500;
-    }
-
-    .section {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      opacity: 0;
-      animation: fadeInUp 0.6s ease-out forwards;
-    }
-
-    .section:nth-child(2) {
-      animation-delay: 0.1s;
-    }
-
-    .section:nth-child(3) {
-      animation-delay: 0.2s;
-    }
-
-    .section:nth-child(4) {
-      animation-delay: 0.3s;
-    }
-
-    .section:nth-child(5) {
-      animation-delay: 0.4s;
-    }
-
-    .section:nth-child(6) {
-      animation-delay: 0.5s;
-    }
-
-    .section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
-      border-color: var(--birumuda);
-    }
-
-    .section h2 {
-      font-size: 1.75rem;
-      font-weight: 600;
-      color: var(--gray-900);
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    .section h2::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: linear-gradient(135deg, var(--birumuda), var(--maing));
-      border-radius: 2px;
-    }
-
-    .checklist {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      gap: 1rem;
-    }
-
-    .checklist li {
-      display: flex;
-      align-items: flex-start;
-      padding: 1.25rem;
-      background: var(--gray-50);
-      border-radius: 10px;
-      border: 1px solid var(--gray-200);
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .checklist li::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: var(--birumuda);
-      transform: scaleY(0);
-      transition: transform 0.3s ease;
-    }
-
-    .checklist li:hover {
-      background: var(--white);
-      border-color: var(--birumuda);
-      transform: translateX(6px);
-      box-shadow: 0 4px 20px rgba(45, 214, 193, 0.15);
-    }
-
-    .checklist li:hover::before {
-      transform: scaleY(1);
-    }
-
-    .icon {
-      font-size: 1.25rem;
-      margin-right: 1rem;
-      flex-shrink: 0;
-      width: 2.25rem;
-      height: 2.25rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 8px;
-      background: var(--gray-100);
-      color: var(--teal);
-      transition: all 0.3s ease;
-      border: 1px solid var(--gray-200);
+      min-height: 60vh;
+      /* Full-screen height */
+      padding: 4rem 2rem;
+
     }
 
-    .checklist li:hover .icon {
-      background: var(--birumuda);
-      color: var(--white);
-      transform: scale(1.05);
-      border-color: var(--birumuda);
-    }
-
-    .icon.check {
-      background: var(--gray-100);
-      color: var(--maing);
-    }
-
-    .icon.id {
-      background: var(--gray-100);
-      color: var(--biru);
-    }
-
-    .icon.bank {
-      background: var(--gray-100);
-      color: var(--teal);
-    }
-
-    .icon.office {
-      background: var(--gray-100);
-      color: var(--shadowg);
-    }
-
-    .text-content {
-      flex: 1;
-      font-size: 1rem;
-      color: var(--gray-700);
-      line-height: 1.6;
-    }
-
-    .text-content strong {
-      color: var(--gray-900);
-      font-weight: 600;
-    }
-
-    .floating-elements {
-      position: fixed;
+    .home1 .background-image1 {
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      pointer-events: none;
+      height: 120%;
+      object-fit: cover;
+      /* Ensures the image covers the section properly */
       z-index: -1;
-      overflow: hidden;
+      opacity: 0.8;
+      background-size: cover;
+      background-position: center;
+      /* Ensures background stays centered */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      filter: brightness(50%);
+      /* transform: translateZ(0); 
+    will-change: transform;  */
     }
 
-    .floating-circle {
+    .home1::before {
+      content: "";
       position: absolute;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--birumuda), var(--maing));
-      opacity: 0.03;
-      animation: float 8s ease-in-out infinite;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 2, 2), rgba(0, 0, 0, 1.7));
+      height: 100%;
+      /* opacity: 0.8; */
+      z-index: -1;
     }
 
-    .floating-circle:nth-child(1) {
-      width: 120px;
-      height: 120px;
-      top: 10%;
-      left: 5%;
-      animation-delay: 0s;
+    /* Home section content */
+    .home1 .content1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      /* Center text */
+      row-gap: 2rem;
+      padding: 1.6rem;
+      max-width: 700px;
+      /* Prevent content from stretching too wide */
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Dark transparent background for text readability */
+      border-radius: 12px;
     }
 
-    .floating-circle:nth-child(2) {
-      width: 80px;
-      height: 80px;
-      top: 50%;
-      right: 10%;
-      animation-delay: 3s;
+    .home1 .content1 h2 {
+      font-size: 3.8rem;
+      color: var(--maing);
+      /* Main color for the title */
+      font-weight: bold;
     }
 
-    .floating-circle:nth-child(3) {
-      width: 100px;
-      height: 100px;
-      bottom: 15%;
-      left: 15%;
-      animation-delay: 6s;
-    }
-
-    @keyframes shimmer {
-      0% {
-        transform: translateX(-100%);
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 1;
-      }
-
-      100% {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px) rotate(0deg);
-      }
-
-      33% {
-        transform: translateY(-15px) rotate(120deg);
-      }
-
-      66% {
-        transform: translateY(15px) rotate(240deg);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 1rem;
-      }
-
-      .hero-header {
-        padding: 2rem 1rem;
-        border-radius: 16px;
-      }
-
-      .section {
-        padding: 1.5rem;
-        border-radius: 16px;
-      }
-
-      .section h2 {
-        font-size: 1.5rem;
-      }
-
-      .checklist li {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem;
-      }
-
-      .icon {
-        align-self: flex-start;
-        margin-bottom: 0.5rem;
-      }
-
-      .image-container {
-        max-width: 250px;
-      }
-
-      .image-container img {
-        height: 100vh;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-header h1 {
-        font-size: 1.75rem;
-      }
-
-      .hero-header p {
-        font-size: 1rem;
-      }
-
-      .section h2 {
-        font-size: 1.25rem;
-      }
+    .home1 .content1 p {
+      font-size: 1.4rem;
+      color: #fff;
+      line-height: 1.5;
     }
   </style>
 </head>
 
 <body>
+  <?php include 'header-cidb.php'; ?>
+  <!-- Hero Section -->
   <section class="home1" id="home1">
     <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
     <div class="content1">
       <h2>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB</h2>
-      <p>Persediaan Dokumen untuk Permohonan, Pembaharuan, atau Perubahan Maklumat</p>
+      <p>Panduan Lengkap untuk Persediaan Dokumen Permohonan, Pembaharuan, atau Perubahan Maklumat</p>
+
     </div>
   </section>
-  <div class="floating-elements">
-    <div class="floating-circle"></div>
-    <div class="floating-circle"></div>
-    <div class="floating-circle"></div>
-  </div>
 
   <div class="container">
-    <div class="image-section">
-      <div class="image-container">
-        <img src="bumi-putera-cidb.jpg" alt="PANDUAN PENGIKTIRAFAN SIJIL TARAF BUMIPUTERA CIDB">
-        <div class="image-overlay">
-         PANDUAN PENGIKTIRAFAN SIJIL TARAF BUMIPUTERA CIDB
+    <!-- Process Overview -->
+    <section class="section fade-in" id="process">
+      <div class="section-header">
+        <h3><i class="ri-roadmap-line"></i> Proses Permohonan STB</h3>
+      </div>
+      <div class="section-content">
+        <div class="alert alert-info">
+          <strong>Penting:</strong> Pastikan anda telah memperoleh atau memperbaharui Perakuan Pendaftaran Kontraktor (PPK) dan Sijil Perolehan Kerja Kerajaan (SPKK) daripada CIDB terlebih dahulu sebelum memohon pengiktirafan taraf Bumiputera.
+        </div>
+
+        <div class="process-flow">
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="ri-file-text-line"></i>
+            </div>
+            <div class="step-title">Sediakan Dokumen</div>
+            <p>Kumpul semua dokumen mandatori dan sokongan</p>
+          </div>
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="ri-upload-line"></i>
+            </div>
+            <div class="step-title">Muat Naik</div>
+            <p>Muat naik dokumen melalui Sistem CIMS</p>
+          </div>
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="ri-search-eye-line"></i>
+            </div>
+            <div class="step-title">Semakan</div>
+            <p>PKK akan menyemak permohonan anda</p>
+          </div>
+          <div class="process-step">
+            <div class="step-icon">
+              <i class="ri-award-line"></i>
+            </div>
+            <div class="step-title">Kelulusan</div>
+            <p>Dapatkan sijil maya STB yang boleh dicetak</p>
+          </div>
+        </div>
+
+        <h4 style="margin-top: 2rem; color: var(--primary-blue);">Jenis-jenis Permohonan STB:</h4>
+
+        <div class="app-types">
+          <div class="app-type">
+            <h4><i class="ri-add-circle-line"></i> Permohonan Baharu</h4>
+            <p>Permohonan kali pertama bagi syarikat yang ingin mendapatkan STB. Tempoh sah laku STB tertakluk kepada tarikh dalam sijil maya yang boleh dicetak melalui Sistem CIMS.</p>
+          </div>
+
+          <div class="app-type">
+            <h4><i class="ri-refresh-line"></i> Pembaharuan</h4>
+            <p>Permohonan untuk syarikat yang telah berdaftar dengan PKK, sama ada STB masih dalam tempoh sah laku atau telah tamat tempoh.</p>
+          </div>
+
+          <div class="app-type">
+            <h4><i class="ri-edit-line"></i> Perubahan Maklumat</h4>
+            <p>Permohonan untuk membuat pindaan terhadap maklumat syarikat seperti perubahan gred, alamat, pemilik, atau ahli lembaga pengarah.</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Jenis Permohonan</h2>
-      <ul class="checklist">
-        <li>
-          <div class="icon check">✅</div>
-          <div class="text-content">
-            <strong>Permohonan Baharu:</strong> Untuk syarikat yang belum mempunyai STB.
-          </div>
-        </li>
-        <li>
-          <div class="icon check">🔄</div>
-          <div class="text-content">
-            <strong>Pembaharuan:</strong> Untuk memperbaharui tempoh sah laku STB.
-          </div>
-        </li>
-        <li>
-          <div class="icon check">✏️</div>
-          <div class="text-content">
-            <strong>Perubahan Maklumat:</strong> Untuk pindaan gred, alamat, pemilik, dsb.
-          </div>
-        </li>
-      </ul>
-    </div>
+    <!-- Mandatory Documents -->
+    <section class="section fade-in" id="documents">
+      <div class="section-header">
+        <h3><i class="ri-file-list-3-line"></i> Dokumen Mandatori</h3>
+      </div>
+      <div class="section-content">
+        <div class="alert alert-warning">
+          <strong>Perhatian:</strong> PKK berhak menolak permohonan syarikat jika dokumen mandatori dan sokongan tidak dimuat-naik dengan lengkap.
+        </div>
 
-    <div class="section">
-      <h2>Syarat Utama Sebelum Memohon</h2>
-      <ul class="checklist">
-        <li>
-          <div class="icon check">📋</div>
-          <div class="text-content">
-            Dapatkan atau perbaharui Perakuan Pendaftaran Kontraktor (PPK).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">🏛️</div>
-          <div class="text-content">
-            Dapatkan Sijil Perolehan Kerja Kerajaan (SPKK).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📁</div>
-          <div class="text-content">
-            Pastikan dokumen wajib dan sokongan lengkap.
-          </div>
-        </li>
-      </ul>
-    </div>
+        <ul class="doc-list">
+          <li class="doc-item">
+            <span class="doc-number">1</span>
+            <div class="doc-title">Kad Pengenalan dan Surat Beranak/Sijil Kelahiran (Berwarna)</div>
+            <div class="doc-details">
+              Diperlukan untuk:
+              <ul>
+                <li>Ahli Lembaga Pengarah</li>
+                <li>Pemegang Ekuiti (individu & individu dalam syarikat pemegang ekuiti)</li>
+                <li>Penandatangan Cek</li>
+                <li>Penama dalam Sijil</li>
+                <li>Perakuan Pengesahan Anak Negeri (Sekiranya perlu bagi Sabah & Sarawak)</li>
+              </ul>
+            </div>
+          </li>
 
-    <div class="section">
-      <h2>Dokumen Mandatori</h2>
-      <ul class="checklist">
-        <li>
-          <div class="icon id">🪪</div>
-          <div class="text-content">
-            Kad Pengenalan & Sijil Lahir (Berwarna) untuk Ahli Lembaga Pengarah, Pemegang Ekuiti, Penandatangan Cek, Penama dalam Sijil.
-          </div>
-        </li>
-        <li>
-          <div class="icon check">🏴</div>
-          <div class="text-content">
-            Perakuan Anak Negeri (untuk Sabah & Sarawak, jika perlu).
-          </div>
-        </li>
-        <li>
-          <div class="icon bank">🏦</div>
-          <div class="text-content">
-            Surat Pengesahan Bank Tahun Semasa (ikut format CIDB).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">💰</div>
-          <div class="text-content">
-            Penyata Caruman KWSP & Borang A dengan resit bayaran (3 bulan terkini).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📄</div>
-          <div class="text-content">
-            Surat makluman jika syarikat tiada pekerja.
-          </div>
-        </li>
-        <li>
-          <div class="icon office">📊</div>
-          <div class="text-content">
-            Carta Organisasi Syarikat (nama & jawatan).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📝</div>
-          <div class="text-content">
-            Borang Pengakuan Pekerjaan (Akuan Berkanun).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">✉️</div>
-          <div class="text-content">
-            Surat Kebenaran Kerja Luar (jika bekerja dengan kerajaan).
-          </div>
-        </li>
-        <li>
-          <div class="icon office">🗺️</div>
-          <div class="text-content">
-            Peta Lakar ke Premis (mercu tanda & nama jalan).
-          </div>
-        </li>
-        <li>
-          <div class="icon office">📸</div>
-          <div class="text-content">
-            Gambar Hadapan Premis.
-          </div>
-        </li>
-        <li>
-          <div class="icon office">🏢</div>
-          <div class="text-content">
-            Dokumen Pemilikan Premis / Geran / Perjanjian Sewa bermeterai setem.
-          </div>
-        </li>
-      </ul>
-    </div>
+          <li class="doc-item">
+            <span class="doc-number">2</span>
+            <div class="doc-title">Surat Pengesahan Bank untuk Tahun Semasa</div>
+            <div class="doc-details">
+              <strong>Nota:</strong> Sila gunakan format yang disediakan oleh PKK.
+            </div>
+          </li>
 
-    <div class="section">
-      <h2>Dokumen Sokongan (Jika Berkaitan)</h2>
-      <ul class="checklist">
-        <li>
-          <div class="icon check">💼</div>
-          <div class="text-content">
-            e-Info SSM terkini (jika syarikat pegang ekuiti lain).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📋</div>
-          <div class="text-content">
-            Salinan Resolusi penandatangan cek (disahkan Setiausaha Syarikat).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">🤝</div>
-          <div class="text-content">
-            Salinan Perjanjian Perkongsian (dimeterai LHDN).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📜</div>
-          <div class="text-content">
-            Borang B – Lesen Perniagaan (Sabah & Labuan).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📋</div>
-          <div class="text-content">
-            Borang I – Ekstrak Perniagaan & Lesen Perniagaan (Sarawak).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📄</div>
-          <div class="text-content">
-            Borang CAP 64 dan R22 (Sarawak).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📊</div>
-          <div class="text-content">
-            Annual Return tahun kewangan terkini disahkan SSM.
-          </div>
-        </li>
-        <li>
-          <div class="icon check">🏛️</div>
-          <div class="text-content">
-            Surat pengesahan MITI (syarikat Bursa Malaysia, BCPLC).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">📝</div>
-          <div class="text-content">
-            Minit Mesyuarat Tahunan (Pendaftar Pertubuhan/Koperasi/Badan Amanah).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">⚖️</div>
-          <div class="text-content">
-            Undang-undang Tubuh/Perlembagaan (Pendaftar Pertubuhan/Koperasi/Badan Amanah).
-          </div>
-        </li>
-        <li>
-          <div class="icon check">👥</div>
-          <div class="text-content">
-            Senarai Ahli Jawatankuasa/Lembaga Pemegang Amanah/Koperasi.
-          </div>
-        </li>
-        <li>
-          <div class="icon bank">💳</div>
-          <div class="text-content">
-            Penyata akaun bank terkini (3 bulan dari tarikh permohonan).
-          </div>
-        </li>
-      </ul>
-    </div>
+          <li class="doc-item">
+            <span class="doc-number">3</span>
+            <div class="doc-title">Penyata Caruman KWSP dan Borang A berserta Resit Bayaran</div>
+            <div class="doc-details">
+              <strong>Keperluan:</strong>
+              <ul>
+                <li>Terkini (3 bulan dari tarikh permohonan)</li>
+                <li>Semua maklumat hendaklah dipaparkan dengan jelas</li>
+                <li>Jika Penama/Penandatangan Cek bukan Ahli Lembaga/Pemegang Ekuiti, mereka hendaklah dicarum di bawah syarikat</li>
+                <li>Jika syarikat tiada pekerja, surat makluman hendaklah dilampirkan</li>
+              </ul>
+            </div>
+          </li>
 
+          <li class="doc-item">
+            <span class="doc-number">4</span>
+            <div class="doc-title">Carta Organisasi Syarikat yang Lengkap dan Terkini</div>
+            <div class="doc-details">
+              Hendaklah mengandungi nama dan jawatan setiap individu.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">5</span>
+            <div class="doc-title">Borang Pengakuan Pekerjaan (Akuan Berkanun)</div>
+            <div class="doc-details">
+              <strong>Nota:</strong> Gunakan format yang disediakan. Jika sedang bekerja dengan Kerajaan, Surat Kebenaran melakukan kerja luar (yang disahkan) hendaklah dilampirkan.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">6</span>
+            <div class="doc-title">Peta Lakar yang Lengkap</div>
+            <div class="doc-details">
+              Dengan mercu tanda dan nama jalan menuju ke premis syarikat.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">7</span>
+            <div class="doc-title">Gambar Hadapan Premis</div>
+            <div class="doc-details">
+              Gambar yang jelas menunjukkan hadapan bangunan premis syarikat.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">8</span>
+            <div class="doc-title">Dokumen Pemilikan Premis Syarikat</div>
+            <div class="doc-details">
+              Geran, Perjanjian Sewa yang dimeteri setem, atau dokumen pemilikan premis yang sah.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Supporting Documents -->
+    <section class="section fade-in" id="supporting">
+      <div class="section-header">
+        <h3><i class="ri-folder-add-line"></i> Dokumen Sokongan (Sekiranya Berkaitan)</h3>
+      </div>
+      <div class="section-content">
+        <div class="alert alert-info">
+          <strong>Maklumat:</strong> Dokumen sokongan berikut hendaklah dilampirkan sekiranya berkaitan dengan syarikat anda.
+        </div>
+
+        <ul class="doc-list">
+          <li class="doc-item">
+            <span class="doc-number">1</span>
+            <div class="doc-title">e-Info SSM yang Terkini</div>
+            <div class="doc-details">
+              3 bulan dari tarikh permohonan (Bagi syarikat yang ekuiti dipegang oleh syarikat lain).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">2</span>
+            <div class="doc-title">Salinan Resolusi Penandatangan Cek</div>
+            <div class="doc-details">
+              Terkini dan disahkan oleh Setiausaha Syarikat (Bagi syarikat ROC).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">3</span>
+            <div class="doc-title">Salinan Perjanjian Perkongsian</div>
+            <div class="doc-details">
+              Dimeteri setem oleh LHDN (Bagi syarikat ROC/ROB).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">4</span>
+            <div class="doc-title">Borang B – Lesen Perniagaan</div>
+            <div class="doc-details">
+              Bagi syarikat yang beroperasi di Sabah & Labuan.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">5</span>
+            <div class="doc-title">Borang I – Ekstrak Perniagaan dan Lesen Perniagaan</div>
+            <div class="doc-details">
+              Bagi syarikat yang beroperasi di Sarawak.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">6</span>
+            <div class="doc-title">Borang CAP 64 dan R22</div>
+            <div class="doc-details">
+              Bagi syarikat yang beroperasi di Sarawak.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">7</span>
+            <div class="doc-title">Annual Return</div>
+            <div class="doc-details">
+              Bagi satu tahun kewangan terkini yang disahkan SSM (Bagi ekuiti syarikat yang dipegang oleh entiti syarikat lain).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">8</span>
+            <div class="doc-title">Surat Pengesahan MITI</div>
+            <div class="doc-details">
+              Bahawa syarikat layak diberikan taraf Bumiputera Controlled Public Listed Company (BCPLC) yang masih sah tempoh kelulusan (Bagi syarikat tersenarai dalam Bursa Malaysia).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">9</span>
+            <div class="doc-title">Minit Mesyuarat Tahunan</div>
+            <div class="doc-details">
+              Bagi syarikat yang berdaftar dengan Pendaftar Pertubuhan (ROS/Koperasi/Badan Amanah).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">10</span>
+            <div class="doc-title">Undang-undang Tubuh/Perlembagaan</div>
+            <div class="doc-details">
+              Bagi syarikat yang berdaftar dengan Pendaftar Pertubuhan (ROS/Koperasi/Badan Amanah).
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">11</span>
+            <div class="doc-title">Senarai Ahli Jawatankuasa/Lembaga</div>
+            <div class="doc-details">
+              Ahli Lembaga Pemegang Amanah/Ahli Lembaga Koperasi (Gunakan format yang disediakan) - Bagi syarikat berdaftar dengan ROS/Koperasi/Badan Amanah.
+            </div>
+          </li>
+
+          <li class="doc-item">
+            <span class="doc-number">12</span>
+            <div class="doc-title">Penyata Akaun Bank Terkini</div>
+            <div class="doc-details">
+              3 bulan dari tarikh permohonan.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
-  <?php include 'footer-cidb.php' ?>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  
+<?php include 'footer-cidb.php'; ?>
 
-  <!-- <script src="./assests/script.js"></script> -->
 
 </body>
 

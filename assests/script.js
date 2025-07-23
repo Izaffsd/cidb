@@ -1,4 +1,5 @@
-$(document).ready(function() {
+// Remove $(document).ready and use DOMContentLoaded instead
+document.addEventListener('DOMContentLoaded', function() {
     // Menu elements
     const menu = document.querySelector('#menu-bar');
     const navbar = document.querySelector('.navbar');
@@ -13,17 +14,17 @@ $(document).ready(function() {
         };
     }
 
-    // Close menu when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.navbar').length && !$(e.target).closest('#menu-bar').length) {
+    // Close menu when clicking outside - converted from jQuery
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.navbar') && !e.target.closest('#menu-bar')) {
             menu.classList.remove('ri-close-line');
             menu.classList.add('ri-menu-3-line');
             navbar.classList.remove('active');
         }
     });
 
-    // Combined scroll and load handler
-    $(window).on('scroll load', function() {
+    // Combined scroll and load handler - converted from jQuery
+    function handleScrollAndLoad() {
         // Reset menu on scroll
         if (menu && navbar) {
             menu.classList.remove('ri-close-line');
@@ -47,33 +48,52 @@ $(document).ready(function() {
             header.classList.toggle("sticky", window.scrollY > 0);
         }
 
-        // Scroll spy for sections
-        $('section').each(function() {
-            let height = $(this).height();
-            let offset = $(this).offset().top - 200;
-            let top = $(window).scrollTop();
-            let id = $(this).attr('id');
+        // Scroll spy for sections - converted from jQuery
+        const sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            let height = section.offsetHeight;
+            let offset = section.offsetTop - 200;
+            let top = window.scrollY;
+            let id = section.getAttribute('id');
 
             if (top > offset && top < offset + height) {
-                $('.navbar li a').removeClass('active');
-                $('.navbar').find(`[href="#${id}"]`).addClass('active');
+                // Remove active class from all navbar links
+                const navbarLinks = document.querySelectorAll('.navbar li a');
+                navbarLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add active class to current section link
+                const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
             }
         });
-    });
+    }
 
-    // Smooth scrolling
-    $('a[href*="#"]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 600, 'linear');
-        
-        // Close mobile menu after clicking a link
-        if (window.innerWidth <= 768) {
-            menu.classList.remove('ri-close-line');
-            menu.classList.add('ri-menu-3-line');
-            navbar.classList.remove('active');
-        }
+    window.addEventListener('scroll', handleScrollAndLoad);
+    window.addEventListener('load', handleScrollAndLoad);
+
+    // Smooth scrolling - converted from jQuery
+    const anchorLinks = document.querySelectorAll('a[href*="#"]');
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                // Smooth scroll to target
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            // Close mobile menu after clicking a link
+            if (window.innerWidth <= 768) {
+                menu.classList.remove('ri-close-line');
+                menu.classList.add('ri-menu-3-line');
+                navbar.classList.remove('active');
+            }
+        });
     });
 
     // Home background changer
@@ -199,13 +219,15 @@ $(document).ready(function() {
     initGallery();
 
     // Image loading animation
-    currentImage.addEventListener('load', function() {
-        this.style.opacity = 1;
-    });
+    if (currentImage) {
+        currentImage.addEventListener('load', function() {
+            this.style.opacity = 1;
+        });
 
-    currentImage.addEventListener('loadstart', function() {
-        this.style.opacity = 0.5;
-    });
+        currentImage.addEventListener('loadstart', function() {
+            this.style.opacity = 0.5;
+        });
+    }
 });
 
 // Google Maps initialization (kept separate as it's called by the Maps API)

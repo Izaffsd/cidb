@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Baru Kad CIDB - MEWAH SERVICES</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="stylesheet" href="/assests/style.css">
 
     <style>
 :root {
@@ -189,23 +191,7 @@
     }
 }
 
-@media (max-width: 480px) {
-    html {
-        font-size: 14px;
-    }
 
-    .home1 {
-        height: 40vh;
-    }
-
-    .home1 .content1 h2 {
-        font-size: 2.5rem;
-    }
-
-    .home1 .content1 p {
-        font-size: 1.3rem;
-    }
-}
 
 /* Additional Subtle Animations */
 @keyframes fadeIn {

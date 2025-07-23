@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renew Kad CIDB - MEWAH SERVICES</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="stylesheet" href="./assests/style.css">
+
     <style>
 
         /* Renewal Information Container */
@@ -92,9 +95,6 @@
         }
 
         @media (max-width: 480px) {
-            html {
-                font-size: 14px;
-            }
 
             .cidb-renewal-pricing {
                 flex-direction: column;
@@ -166,6 +166,7 @@
 </head>
 <body>
     <?php include 'header-cidb.php' ?>
+
 
     <section class="home1" id="home1">
         <img src="kad-cidb.jpg" alt="Home background" class="background-image1">

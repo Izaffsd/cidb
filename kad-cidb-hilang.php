@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gantian Kad CIDB - MEWAH SERVICES</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+    <link rel="stylesheet" href="./assests/style.css">
+
     <style>
         /* Gantian Kad Container */
         .cidb-gantian-container {
@@ -137,9 +140,6 @@
         }
 
         @media (max-width: 480px) {
-            html {
-                font-size: 14px;
-            }
 
             .home1 {
                 height: 40vh;
