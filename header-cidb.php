@@ -228,10 +228,11 @@ header .navbar li .nested-dropdown-menu a:hover {
 
     header .navbar.active {
         right: 0;
+
     }
 
     header .navbar li {
-        margin: 0.4rem 0;
+        margin: 1rem 0;
     }
 
     header .navbar li a {
@@ -239,7 +240,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         padding: 0.2rem;
         color: black;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     header .navbar li .dropdown-menu,
@@ -275,8 +276,11 @@ header .navbar li .nested-dropdown-menu a:hover {
     header .logo {
         font-size: 1.9rem;
     }
+    header .navbar li{
+        margin: 0.1rem 0;
+    }
     header .navbar li a {
-        font-size: 1.6rem; /* Reduce font size for smaller screens */
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
         padding: 0.6rem;
         margin: 1.5rem 0.8rem 0 0.5rem;
     }

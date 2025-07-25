@@ -114,15 +114,15 @@ body {
 
 /* Number Badge */
 .numero-badge {
-  width: 4%;
-  height: 13%;
+  width: 41px;
+  height: 41px;
+  font-size: 1.57rem;
   background: linear-gradient(135deg, var(--maing) 0%, var(--shadowg) 100%);
   color: var(--teks);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.37rem;
   font-weight: bold;
 }
 
@@ -205,9 +205,9 @@ body {
   }
 
   .numero-badge {
-    width: 68px;
-    height: 68px;
-    font-size: 2.04rem;
+    width: 34px;
+    height: 34px;
+    font-size: 1.34rem;
   }
 
   .tipo-content h3 {
@@ -228,11 +228,15 @@ body {
 
   .numero-badge {
     align-self: center;
+    width: 34px;
+    height: 34px;
+    font-size: 1.6rem;
   }
 
   .super-title {
     font-size: 2.55rem;
   }
+
 }
 
 .content {
@@ -247,7 +251,7 @@ body {
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-decoration: underline;
   color: var(--teks);
@@ -261,12 +265,21 @@ body {
 }
 
 .section-title {
-  font-size: 27.2px;
+  font-size: 220%;
   font-weight: bold;
-  margin-bottom: 25.5px;
+  margin-top: 18.5px;
   color: var(--teal);
   border-bottom: 2px solid var(--birumuda);
-  padding-bottom: 8.5px;
+  padding-bottom: 6.5px;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: 18.5px;
+  color: var(--teal);
+  border-bottom: 2px solid var(--birumuda);
+  padding-bottom: 6.5px;
 }
 
 .intro-text {
@@ -349,7 +362,7 @@ body {
 }
 
 .supporting-title {
-  font-size: 27.2px;
+  font-size: 2.1rem;
   font-weight: bold;
   margin-bottom: 34px;
   color: var(--teal);

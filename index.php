@@ -252,17 +252,17 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="icon">ðŸ“š</span> Tiada Kehadiran Kelas Diperlukan</h3>
+                    <h3><span class="icon"><i class="fas fa-bolt"></i></span> Tiada Kehadiran Kelas Diperlukan</h3>
                     <p>Mohon Kad Hijau CIDB tanpa perlu hadir kursus.</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3><span class="icon">ðŸ’°</span> Jimat Masa & Duit</h3>
+                    <h3><span class="icon"><i class="fas fa-money-bill-wave"></i></span> Jimat Masa & Duit</h3>
                     <p>Proses yang cepat dan penjimatan kos untuk menukar OGSP kepada Kad Hijau CIDB.</p>
                 </div>
 
                 <div class="feature-card">
-                    <h3><span class="icon">âš¡</span> Syarat</h3>
+                    <h3><span class="icon"><i class="fas fa-book"></i></span> Syarat</h3>
                     <p>Memiliki Kad NIOSH OGSP adalah syarat kelayakan.</p>
                 </div>
             </div>
@@ -270,7 +270,7 @@
             <div class="cta-section">
                 <a href="https://www.watsap.my/601126165376/CIDBKadhijauwebsite" class="cta-button">
                     Convert OGSP Card to CIDB Card
-                    <span>â†’</span>
+                    <span><i class="fas fa-arrow-right"></i></span>
                 </a>
             </div>
         </div>
