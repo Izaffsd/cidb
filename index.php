@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<?php include 'seo.php' ?>
+<?php 
+    include_once 'seo.php';
+    renderSEOHead(); 
+    ?>
 
     <link rel="stylesheet" href="./assests/style.css">
 
@@ -14,7 +17,7 @@
 </head>
 
 <body>
-
+<?php echo getSEOH1(); ?>
     <!-- header ends -->
 
 <?php include 'header-cidb.php'; ?>
@@ -37,7 +40,8 @@
                 <a href="https://wasap.my/60169743112/CIDBKadhijauwebsite" class="btn btn2">+60169743112</a>
             </div>
         </div>
-
+<?php renderSEOSchemas(); ?>
+    <?php renderSEOWidgets(); ?>
     </section>
     <!-- home section ends -->
 

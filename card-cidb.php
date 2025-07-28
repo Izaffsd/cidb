@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include 'seo.php' ?>
+    <?php 
+    include_once 'seo.php';
+    renderSEOHead(); 
+    ?>
 
     <title>Mewah Services</title>
     <link rel="stylesheet" href="./assests/style.css">
@@ -20,11 +23,15 @@
 </head>
 
 <body>
-<?php include 'header-cidb.php' ?>
-<?php include 'home-cidb.php' ?>
+    <?php include 'header-cidb.php' ?>
+    <?php include 'home-cidb.php' ?>
     <section class="cidb-info-section">
         <div class="container">
             <div class="text-content">
+                <h1><?php echo getSEOH1(); ?></h1>
+    
+    <?php renderSEOSchemas(); ?>
+    <?php renderSEOWidgets(); ?>
                 <h2>Adakah Kad CIDB dan Kad Hijau Sama?</h2>
                 <p><strong>Ya.</strong> Kad CIDB dan Kad Hijau adalah kad yang SAMA. Kad ini dikeluarkan oleh <strong>Lembaga Pembangunan Industri Pembinaan Malaysia (CIDB)</strong> kepada individu dalam industri pembinaan di Malaysia.</p>
                 <p>Kad ini membuktikan bahawa pemiliknya mempunyai kelayakan, kebolehan, dan dibenarkan untuk menjalankan kerja-kerja pembinaan. Berikut adalah kelebihan yang dimiliki pemegang Kad CIDB:</p>
@@ -78,7 +85,7 @@
             </div>
         </div>
     </section>
-<?php include 'whatapps-cidb.php'; ?>
+    <?php include 'whatapps-cidb.php'; ?>
 
 
     <!-- footer section starts -->
