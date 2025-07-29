@@ -10,13 +10,14 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
   <link rel="stylesheet" href="iktirafan-sijil.css">
   <link rel="stylesheet" href="assests/style.css">
+<?php include 'seo.php' ?>
 
-  <style>
-
-  </style>
+<?php renderSEOHead(); ?>
 </head>
 
 <body>
+<?php renderSEOSchemas(); ?>
+<?php getSEOH1(); ?>
   <?php include 'header-cidb.php'; ?>
   <!-- Hero Section -->
   <section class="home1" id="home1">
@@ -262,7 +263,8 @@
   <?php include 'whatapps-cidb.php'; ?>
   <?php include 'footer-cidb.php'; ?>
 
-
+<?php renderSEOWidgets(); ?>
+<?php renderSEOAnalytics(); ?>
+<?php renderSocialLinks(); ?>
 </body>
-
 </html>

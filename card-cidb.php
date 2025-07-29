@@ -20,9 +20,15 @@
     <link href="
     https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
     " rel="stylesheet">
+<?php renderSEOHead(); ?>
 </head>
 
 <body>
+<?php renderSEOSchemas(); ?>
+<?php getSEOH1(); ?>
+
+
+
     <?php include 'header-cidb.php' ?>
     <?php include 'home-cidb.php' ?>
     <section class="cidb-info-section">
@@ -95,7 +101,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="./assests/script.js"></script>
-
+<?php renderSEOWidgets(); ?>
+<?php renderSEOAnalytics(); ?>
+<?php renderSocialLinks(); ?>
 </body>
-
 </html>

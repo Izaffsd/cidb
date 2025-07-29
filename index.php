@@ -6,20 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<?php 
-    include_once 'seo.php';
-    renderSEOHead(); 
-    ?>
+<?php include_once 'seo.php';?>
 
     <link rel="stylesheet" href="./assests/style.css">
 
-
+<?php renderSEOHead(); ?>
 </head>
 
 <body>
-<?php echo getSEOH1(); ?>
-    <!-- header ends -->
+<?php renderSEOSchemas(); ?>
+<?php getSEOH1(); ?>
 
+<!-- header ends -->
 <?php include 'header-cidb.php'; ?>
     
 
@@ -522,6 +520,8 @@
         performance.mark('app-loaded');
     </script>
 
+<?php renderSEOWidgets(); ?>
+<?php renderSEOAnalytics(); ?>
+<?php renderSocialLinks(); ?>
 </body>
-
 </html>

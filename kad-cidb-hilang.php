@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gantian Kad CIDB - MEWAH SERVICES</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
     <link rel="stylesheet" href="./assests/style.css">
     <?php include 'seo.php'; ?>
 
@@ -155,8 +154,13 @@
             }
         }
     </style>
+<?php renderSEOHead(); ?>
 </head>
+
 <body>
+<?php renderSEOSchemas(); ?>
+<?php getSEOH1(); ?>
+
     <!-- header starts -->
     <?php include 'header-cidb.php' ?>
     <!-- header ends -->
@@ -208,6 +212,8 @@
 <?php include 'whatapps-cidb.php'; ?>
     
 <?php  include 'footer-cidb.php' ?> 
-
+<?php renderSEOWidgets(); ?>
+<?php renderSEOAnalytics(); ?>
+<?php renderSocialLinks(); ?>
 </body>
 </html>
