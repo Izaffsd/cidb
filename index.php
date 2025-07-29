@@ -31,7 +31,7 @@
             sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1200px">
         <div class="content">
             <h2>Segera Perbaharui Kad Hijau CIDB Anda!</h2>
-            <p>Pakar dalam pendaftaran dan pembaharuan Kad Hijau CIDB Malaysia!</p>
+            <p>Pakar dalam pendaftaran dan pembaharuan Kad Hijau CIDB Malaysia sejak 2018!</p>
             <span>Hubungi kami sekarang untuk bantuan segera!</span>
             <div class="btn-container">
                 <a href="https://wasap.my/601126165376/CIDBKadhijauwebsite" class="btn btn2">+601126165376</a>

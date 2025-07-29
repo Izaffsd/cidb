@@ -542,7 +542,6 @@ class CIDBKadHijauSEO {
         echo "\n<!-- WhatsApp Widget -->\n";
         echo '<div id="whatsapp-widget" class="floating-widget whatsapp-widget" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">' . "\n";
         echo '<a href="https://wa.me/601126165376?text=Hi%2C%20saya%20nak%20tanya%20tentang%20servis%20kad%20hijau%20CIDB" target="_blank" rel="noopener" onclick="trackWhatsAppClick()" aria-label="WhatsApp Kami">' . "\n";
-        echo '<img src="' . $this->siteUrl . '/icon.png" alt="WhatsApp" width="60" height="60" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s ease;">' . "\n";
         echo '</a>' . "\n";
         echo '</div>' . "\n";
         echo "<!-- End WhatsApp Widget -->\n\n";
@@ -552,7 +551,6 @@ class CIDBKadHijauSEO {
         echo "\n<!-- Click to Call Button -->\n";
         echo '<div id="call-button" class="floating-widget call-widget" style="position: fixed; bottom: 90px; right: 20px; z-index: 9999;">' . "\n";
         echo '<a href="tel:' . $this->businessPhone . '" onclick="trackPhoneClick()" rel="noopener" aria-label="Call Us">' . "\n";
-        echo '<span style="display: inline-block; width: 50px; height: 50px; background: #007bff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;">📞</span>' . "\n";
         echo '</a>' . "\n";
         echo '</div>' . "\n";
         echo "<!-- End Click to Call Button -->\n\n";
