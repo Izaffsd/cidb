@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" sizes="32x32" href="icon-cidb-mewah.png">
+<link rel="icon" type="image/png" href="/icon-cidb-mewah.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/icon-cidb-mewah.png">
+<meta name="theme-color" content="#ffffff">
 
 <?php include_once 'seo.php';?>
 

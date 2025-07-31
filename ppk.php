@@ -35,8 +35,9 @@
         }
 
         .ppk-main-container {
-            width: 100%;
+            width: 90%;
             min-height: 100vh;
+            margin: auto;
         }
 
         /* Hero Banner */
@@ -50,100 +51,80 @@
         .ppk-hero-content {
             max-width: 1200px;
             margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-        }
-
-        .ppk-hero-text {
-            flex: 1;
-            text-align: left;
         }
 
         .ppk-main-title {
-            font-size: 5.1rem;
+            font-size: 5.6rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 1.6rem;
             line-height: 1.2;
         }
 
         .ppk-hero-subtitle {
-            font-size: 2.04rem;
+            font-size: 2.4rem;
             opacity: 0.9;
-        }
-
-        .ppk-hero-image-placeholder {
-            flex: 0 0 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(10px);
-        }
-
-        .ppk-cidb-logo {
-            font-size: 3.4rem;
-            font-weight: bold;
-            color: var(--teks);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Content Wrapper */
         .ppk-content-wrapper {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 4.8rem 1.8rem;
+        }
+
+        .ppk-section {
+            margin-bottom: 6.4rem;
         }
 
         .ppk-section-title {
-            font-size: 4.25rem;
+            font-size: 4rem;
             color: var(--maing);
-            margin-bottom: 2rem;
-            text-align: center;
+            margin-bottom: 3.2rem;
+            font-weight: 600;
+            border-bottom: 3px solid var(--birumuda);
+            padding-bottom: 0.8rem;
+        }
+
+        .ppk-subsection-title {
+            font-size: 2.9rem;
+            color: var(--teal);
+            margin-bottom: 1.6rem;
+            margin-top: 3.2rem;
             font-weight: 600;
         }
 
-        /* Definition Section */
-        .ppk-definition-section {
-            margin-bottom: 4rem;
-        }
-
-        .ppk-definition-card {
-            background: var(--teks);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(12, 173, 152, 0.15);
-            border: 1px solid var(--gray-100);
-        }
-
-        .ppk-definition-card p {
-            font-size: 1.87rem;
+        .ppk-text-content {
+            font-size: 1.76rem;
             color: var(--gray-600);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.4rem;
+            line-height: 1.7;
         }
 
-        .ppk-equity-info h3 {
-            color: var(--maing);
-            margin-bottom: 1rem;
-            font-size: 2.04rem;
+        .ppk-definition-text {
+            background: var(--teks);
+            padding: 3.2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 3.2rem;
         }
 
-        .ppk-equity-list {
+        .ppk-list {
             list-style: none;
             padding: 0;
+            margin: 1.6rem 0;
         }
 
-        .ppk-equity-list li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
+        .ppk-list li {
+            padding: 0.8rem 0;
+            padding-left: 2.4rem;
             position: relative;
             color: var(--gray-600);
-            font-size: 1.7rem;
+            font-size: 1.76rem;
         }
 
-        .ppk-equity-list li::before {
+        .ppk-list li::before {
             content: "•";
             color: var(--maing);
             font-weight: bold;
@@ -151,235 +132,100 @@
             left: 0;
         }
 
-        /* Scope Section */
-        .ppk-scope-section {
-            margin-bottom: 4rem;
-        }
-
-        .ppk-scope-intro {
-            text-align: center;
-            font-size: 1.87rem;
-            color: var(--gray-600);
-            margin-bottom: 2rem;
-        }
-
-        .ppk-scope-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .ppk-scope-item {
+        /* Table Styles */
+        .ppk-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.4rem 0;
             background: var(--teks);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(12, 173, 152, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .ppk-scope-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(12, 173, 152, 0.2);
-        }
-
-        .ppk-scope-icon {
-            font-size: 5.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .ppk-scope-item h3 {
-            color: var(--maing);
-            margin-bottom: 1rem;
-            font-size: 2.21rem;
-        }
-
-        .ppk-scope-item p {
-            color: var(--gray-600);
-            font-size: 1.615rem;
-        }
-
-        /* Categories Section */
-        .ppk-categories-section {
-            margin-bottom: 4rem;
-        }
-
-        .ppk-categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .ppk-category-card {
-            background: var(--teks);
-            padding: 2.5rem;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 6px 20px rgba(12, 173, 152, 0.12);
-            transition: all 0.3s ease;
-            border: 1px solid var(--gray-100);
-        }
-
-        .ppk-category-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 35px rgba(12, 173, 152, 0.25);
-            border-color: var(--birumuda);
-        }
-
-        .ppk-category-icon {
-            font-size: 5.95rem;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-
-        .ppk-category-card h3 {
-            color: var(--maing);
-            margin-bottom: 1rem;
-            font-size: 2.38rem;
-            font-weight: 600;
-        }
-
-        .ppk-category-card p {
-            color: var(--gray-600);
-            line-height: 1.6;
-            font-size: 1.7rem;
-        }
-
-        /* Info Section */
-        .ppk-info-section {
-            margin-bottom: 4rem;
-        }
-
-        .ppk-info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .ppk-info-box {
-            background: var(--teks);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(12, 173, 152, 0.15);
-            border: 1px solid var(--gray-100);
-        }
-
-        .ppk-info-title {
-            color: var(--maing);
-            font-size: 2.55rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        /* Grade Table */
-        .ppk-grade-table {
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-
-        .ppk-grade-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background: var(--gray-50);
             border-radius: 8px;
-            border-left: 4px solid var(--maing);
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .ppk-grade {
-            font-weight: bold;
-            color: var(--maing);
-            font-size: 1.87rem;
+        .ppk-table th,
+        .ppk-table td {
+            padding: 1.6rem;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-100);
         }
 
-        .ppk-limit {
+        .ppk-table th {
+            background: var(--maing);
+            color: var(--teks);
+            font-weight: 600;
+            font-size: 1.76rem;
+        }
+
+        .ppk-table td {
+            font-size: 1.6rem;
             color: var(--gray-600);
-            font-weight: 500;
-            font-size: 1.7rem;
         }
 
-        /* Category Details */
-        .ppk-category-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
+        .ppk-table tr:last-child td {
+            border-bottom: none;
         }
 
-        .ppk-category-item strong {
-            color: var(--maing);
-            font-size: 1.785rem;
+        .ppk-table tr:hover {
+            background: var(--gray-50);
         }
 
-        .ppk-category-item p {
-            color: var(--gray-600);
-            margin-top: 0.3rem;
-            font-size: 1.615rem;
-        }
-
-        /* Specialization Info */
-        .ppk-specialization-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-
-        .ppk-spec-item strong {
-            color: var(--maing);
-            font-size: 1.785rem;
-        }
-
-        .ppk-spec-item p {
-            color: var(--gray-600);
-            margin-top: 0.3rem;
-            font-size: 1.615rem;
-        }
-
-        /* Classification Section */
-        .ppk-classification-section {
-            margin-bottom: 4rem;
-        }
-
-        .ppk-classification-grid {
+        /* Grid Layout for structured content */
+        .ppk-content-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 3.2rem;
+            margin: 3.2rem 0;
         }
 
-        .ppk-status-card {
+        .ppk-content-box {
             background: var(--teks);
-            padding: 2.5rem;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 6px 20px rgba(12, 173, 152, 0.12);
-            transition: all 0.3s ease;
-            border: 1px solid var(--gray-100);
+            padding: 3.2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .ppk-status-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(12, 173, 152, 0.2);
-        }
-
-        .ppk-status-icon {
-            font-size: 5.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .ppk-status-card h3 {
+        .ppk-content-box h4 {
             color: var(--maing);
-            margin-bottom: 1rem;
-            font-size: 2.21rem;
+            font-size: 2.08rem;
+            margin-bottom: 1.6rem;
             font-weight: 600;
         }
 
-        .ppk-status-card p {
+        .ppk-content-box p {
             color: var(--gray-600);
-            line-height: 1.5;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Status indicators */
+        .ppk-status-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            margin: 3.2rem 0;
+        }
+
+        .ppk-status-item {
+            background: var(--teks);
+            padding: 2.4rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--maing);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .ppk-status-item h4 {
+            color: var(--maing);
+            font-size: 1.92rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .ppk-status-item p {
+            color: var(--gray-600);
+            font-size: 1.6rem;
+            margin: 0;
         }
 
         /* Footer */
@@ -387,92 +233,355 @@
             background: var(--gray-800);
             color: var(--teks);
             text-align: center;
-            padding: 2rem;
-            font-size: 1.7rem;
+            padding: 3.2rem;
+            font-size: 1.6rem;
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .ppk-hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .ppk-hero-text {
-                text-align: center;
-            }
-
+        /* Large tablets and small desktops */
+        @media (max-width: 1024px) {
             .ppk-main-title {
-                font-size: 3.4rem;
+                font-size: 4.8rem;
             }
 
-            .ppk-hero-image-placeholder {
-                flex: none;
-                width: 150px;
-                height: 150px;
-            }
-
-            .ppk-content-wrapper {
-                padding: 2rem 1rem;
+            .ppk-hero-subtitle {
+                font-size: 2.08rem;
             }
 
             .ppk-section-title {
-                font-size: 3.4rem;
+                font-size: 3.6rem;
             }
 
-            .ppk-scope-grid,
-            .ppk-categories-grid,
-            .ppk-info-grid,
-            .ppk-classification-grid {
-                grid-template-columns: 1fr;
+            .ppk-subsection-title {
+                font-size: 2.6rem;
             }
 
-            .ppk-definition-card,
-            .ppk-info-box,
-            .ppk-category-card,
-            .ppk-status-card {
-                padding: 1.5rem;
+            .ppk-text-content {
+                font-size: 1.6rem;
+            }
+
+            .ppk-content-wrapper {
+                padding: 4rem 3.4rem;
             }
         }
 
+        /* Tablets */
+        @media (max-width: 768px) {
+            .ppk-main-title {
+                font-size: 4rem;
+            }
+
+            .ppk-hero-subtitle {
+                font-size: 1.92rem;
+            }
+
+            .ppk-section-title {
+                font-size: 3.2rem;
+            }
+
+            .ppk-subsection-title {
+                font-size: 2.4rem;
+            }
+
+            .ppk-text-content {
+                font-size: 1.6rem;
+            }
+
+            .ppk-content-wrapper {
+                padding: 3.2rem 2.6rem;
+            }
+
+            .ppk-section {
+                margin-bottom: 4.8rem;
+            }
+
+            .ppk-content-grid {
+                grid-template-columns: 1fr;
+                gap: 2.4rem;
+            }
+
+            .ppk-content-box {
+                padding: 2.4rem;
+            }
+
+            .ppk-content-box h4 {
+                font-size: 1.92rem;
+            }
+
+            .ppk-content-box p {
+                font-size: 1.44rem;
+            }
+
+            .ppk-table {
+                font-size: 1.44rem;
+            }
+
+            .ppk-table th,
+            .ppk-table td {
+                padding: 1.2rem 0.8rem;
+            }
+
+            .ppk-table th {
+                font-size: 1.6rem;
+            }
+
+            .ppk-list li {
+                font-size: 1.6rem;
+                padding-left: 2rem;
+            }
+
+            .ppk-status-item {
+                padding: 2rem;
+            }
+
+            .ppk-status-item h4 {
+                font-size: 1.76rem;
+            }
+
+            .ppk-status-item p {
+                font-size: 1.44rem;
+            }
+
+            .ppk-definition-text {
+                padding: 2.4rem;
+            }
+        }
+
+        /* Large mobile phones */
+        @media (max-width: 640px) {
+            .ppk-main-title {
+                font-size: 3.6rem;
+            }
+
+            .ppk-hero-subtitle {
+                font-size: 1.76rem;
+            }
+
+            .ppk-section-title {
+                font-size: 2.8rem;
+            }
+
+            .ppk-subsection-title {
+                font-size: 2.2rem;
+            }
+
+            .ppk-text-content {
+                font-size: 1.5rem;
+            }
+
+            .ppk-content-wrapper {
+                padding: 2.4rem 1.2rem;
+            }
+
+            .ppk-hero-banner {
+                padding: 2.4rem 1.2rem;
+            }
+
+            .ppk-content-box {
+                padding: 1.8rem;
+            }
+
+            .ppk-content-box h4 {
+                font-size: 1.76rem;
+            }
+
+            .ppk-content-box p {
+                font-size: 1.3rem;
+            }
+
+            .ppk-list li {
+                font-size: 1.44rem;
+            }
+
+            .ppk-table th {
+                font-size: 1.44rem;
+            }
+
+            .ppk-table td {
+                font-size: 1.28rem;
+            }
+
+            .ppk-status-item h4 {
+                font-size: 1.6rem;
+            }
+
+            .ppk-status-item p {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Standard mobile phones */
         @media (max-width: 480px) {
             .ppk-hero-banner {
                 padding: 2rem 1rem;
             }
 
             .ppk-main-title {
-                font-size: 2.55rem;
+                font-size: 3.2rem;
+                line-height: 1.1;
             }
 
             .ppk-hero-subtitle {
-                font-size: 1.7rem;
+                font-size: 1.6rem;
+                line-height: 1.4;
+            }
+
+            .ppk-section-title {
+                font-size: 2.4rem;
+                margin-bottom: 2.4rem;
+            }
+
+            .ppk-subsection-title {
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+                margin-top: 2.4rem;
+            }
+
+            .ppk-text-content {
+                font-size: 1.4rem;
+                margin-bottom: 1.8rem;
+            }
+
+            .ppk-content-wrapper {
+                padding: 2rem 1rem;
+            }
+
+            .ppk-section {
+                margin-bottom: 3.2rem;
+            }
+
+            .ppk-content-grid {
+                gap: 1.6rem;
+            }
+
+            .ppk-content-box {
+                padding: 1.6rem;
+            }
+
+            .ppk-content-box h4 {
+                font-size: 1.6rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .ppk-content-box p {
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+
+            .ppk-definition-text {
+                padding: 1.8rem;
+                margin-bottom: 2.4rem;
+            }
+
+            .ppk-list {
+                margin: 1.2rem 0;
+            }
+
+            .ppk-list li {
+                font-size: 1.35rem;
+                padding: 0.6rem 0;
+                padding-left: 1.8rem;
+                line-height: 1.5;
+            }
+
+            .ppk-table {
+                font-size: 1.2rem;
+            }
+
+            .ppk-table th,
+            .ppk-table td {
+                padding: 0.8rem 0.6rem;
+            }
+
+            .ppk-table th {
+                font-size: 1.3rem;
+            }
+
+            .ppk-table td {
+                font-size: 1.2rem;
+            }
+
+            .ppk-status-list {
+                gap: 1.2rem;
+                margin: 2.4rem 0;
+            }
+
+            .ppk-status-item {
+                padding: 1.6rem;
+            }
+
+            .ppk-status-item h4 {
+                font-size: 1.5rem;
+                margin-bottom: 0.6rem;
+            }
+
+            .ppk-status-item p {
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+
+            .ppk-footer {
+                padding: 2.4rem;
+                font-size: 1.4rem;
             }
         }
 
-        .ppk-pdf-viewer {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
+        /* Small mobile phones */
+        @media (max-width: 360px) {
+            .ppk-main-title {
+                font-size: 2.8rem;
+            }
 
-        .ppk-pdf-viewer h3 {
-            margin-bottom: 10px;
-            font-size: 30.6px;
-            color: #333;
-        }
+            .ppk-hero-subtitle {
+                font-size: 1.4rem;
+            }
 
-        .ppk-pdf-viewer iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            .ppk-section-title {
+                font-size: 2.2rem;
+            }
+
+            .ppk-subsection-title {
+                font-size: 1.8rem;
+            }
+
+            .ppk-text-content {
+                font-size: 1.3rem;
+            }
+
+            .ppk-content-box h4 {
+                font-size: 1.5rem;
+            }
+
+            .ppk-content-box p {
+                font-size: 1.2rem;
+            }
+
+            .ppk-list li {
+                font-size: 1.25rem;
+            }
+
+            .ppk-table {
+                font-size: 1.1rem;
+            }
+
+            .ppk-table th {
+                font-size: 1.2rem;
+            }
+
+            .ppk-table td {
+                font-size: 1.1rem;
+            }
+
+            .ppk-status-item h4 {
+                font-size: 1.4rem;
+            }
+
+            .ppk-status-item p {
+                font-size: 1.2rem;
+            }
         }
     </style>
     <link rel="stylesheet" href="assests/style.css">
-
 
     <?php include 'seo.php' ?>
     <?php renderSEOHead(); ?>
@@ -489,199 +598,236 @@
         <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
         <div class="content1">
             <h1>Perakuan Pendaftaran Kontraktor Tempatan (PPK)</h1>
-            <p>Panduan Lengkap Pendaftaran Kontraktor di Malaysia — Proses, Syarat Kelayakan, Kategori PPK, Dokumen Sokongan dan Tatacara Permohonan untuk Syarikat Tempatan.
-
-            </p>
+            <p>Panduan Lengkap Pendaftaran Kontraktor di Malaysia — Proses, Syarat Kelayakan, Kategori PPK, Dokumen Sokongan dan Tatacara Permohonan untuk Syarikat Tempatan.</p>
         </div>
     </section>
+
     <div class="ppk-main-container">
-
-
-        <!-- Definition Section -->
+        <!-- Content Wrapper -->
         <div class="ppk-content-wrapper">
-            <div class="ppk-definition-section">
+            <!-- Definition Section -->
+            <section class="ppk-section">
                 <h2 class="ppk-section-title">Definisi PPK</h2>
-                <div class="ppk-definition-card">
-                    <p>Pendaftaran PPK hanya dibuka kepada syarikat yang diperbadankan di Malaysia serta mempunyai pegangan ekuiti tempatan tujuh puluh peratus (70%) dan ke atas.</p>
-                    <div class="ppk-equity-info">
-                        <h3>Pegangan Ekuiti Asing yang Dibenarkan:</h3>
-                        <ul class="ppk-equity-list">
-                            <li>Ekuiti asing: maksimum 30% dari jumlah modal</li>
-                            <li>Ekuiti ASEAN: maksimum 51% dari jumlah modal</li>
-                            <li>Ekuiti FTA: berbagai peratusan mengikut negara</li>
-                        </ul>
-                    </div>
+                <div class="ppk-definition-text">
+                    <p class="ppk-text-content">Pendaftaran PPK hanya dibuka kepada syarikat yang diperbadankan di Malaysia serta mempunyai pegangan ekuiti tempatan tujuh puluh peratus (70%) dan ke atas.</p>
                 </div>
-                <!-- PDF Viewer Section -->
-                <div class="ppk-pdf-viewer">
-                    <h3>Lihat Dokumen PDF:</h3>
-                    <iframe src=".\assests\doc\Definisi-PPK&Pendaftaran.pdf" type="application/pdf" frameborder="0"></iframe>
-                </div>
-            </div>
+                
+                <h3 class="ppk-subsection-title">Pegangan Ekuiti Asing yang Dibenarkan</h3>
+                <ul class="ppk-list">
+                    <li>Ekuiti asing: maksimum 30% dari jumlah modal</li>
+                    <li>Ekuiti ASEAN: maksimum 51% dari jumlah modal</li>
+                    <li>Ekuiti FTA: berbagai peratusan mengikut negara</li>
+                </ul>
+            </section>
 
             <!-- Scope Section -->
-            <div class="ppk-scope-section">
+            <section class="ppk-section">
                 <h2 class="ppk-section-title">Skop Pendaftaran</h2>
-                <p class="ppk-scope-intro">Setiap kontraktor didaftarkan mengikut empat kriteria utama:</p>
+                <p class="ppk-text-content">Setiap kontraktor didaftarkan mengikut empat kriteria utama:</p>
 
-                <div class="ppk-scope-grid">
-                    <div class="ppk-scope-item">
-                        <div class="ppk-scope-icon">📊</div>
-                        <h3>Gred</h3>
-                        <p>Menentukan had keupayaan menender dan menjalankan kerja</p>
+                <div class="ppk-content-grid">
+                    <div class="ppk-content-box">
+                        <h4>Gred</h4>
+                        <p>Menentukan had keupayaan menender dan menjalankan kerja berdasarkan nilai projek</p>
                     </div>
-                    <div class="ppk-scope-item">
-                        <div class="ppk-scope-icon">🏗️</div>
-                        <h3>Kategori</h3>
-                        <p>Jenis pembinaan yang boleh dilaksanakan</p>
+                    <div class="ppk-content-box">
+                        <h4>Kategori</h4>
+                        <p>Jenis pembinaan yang boleh dilaksanakan oleh kontraktor</p>
                     </div>
-                    <div class="ppk-scope-item">
-                        <div class="ppk-scope-icon">⚙️</div>
-                        <h3>Pengkhususan</h3>
-                        <p>Bidang kerja khusus dalam setiap kategori</p>
+                    <div class="ppk-content-box">
+                        <h4>Pengkhususan</h4>
+                        <p>Bidang kerja khusus dalam setiap kategori pembinaan</p>
                     </div>
-                    <div class="ppk-scope-item">
-                        <div class="ppk-scope-icon">⭐</div>
-                        <h3>Pengkelasan</h3>
-                        <p>Status berdasarkan pengalaman projek</p>
+                    <div class="ppk-content-box">
+                        <h4>Pengkelasan</h4>
+                        <p>Status berdasarkan pengalaman dan aktiviti projek kontraktor</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Categories Section -->
-            <div class="ppk-categories-section">
+            <section class="ppk-section">
                 <h2 class="ppk-section-title">Kategori Pendaftaran</h2>
-                <div class="ppk-categories-grid">
-                    <div class="ppk-category-card">
-                        <div class="ppk-category-icon ppk-icon-building">🏢</div>
-                        <h3>Pembinaan Bangunan (B)</h3>
-                        <p>Pembinaan struktur bangunan kediaman, komersial dan institusi</p>
+                
+                <div class="ppk-content-grid">
+                    <div class="ppk-content-box">
+                        <h4>Pembinaan Bangunan (B)</h4>
+                        <p>Pembinaan struktur bangunan kediaman, komersial dan institusi termasuk rumah, pejabat, kedai dan bangunan awam.</p>
                     </div>
-                    <div class="ppk-category-card">
-                        <div class="ppk-category-icon ppk-icon-civil">🛣️</div>
-                        <h3>Pembinaan Kejuruteraan Awam (CE)</h3>
-                        <p>Pembinaan infrastruktur awam seperti jalan, jambatan dan utiliti</p>
+                    <div class="ppk-content-box">
+                        <h4>Pembinaan Kejuruteraan Awam (CE)</h4>
+                        <p>Pembinaan infrastruktur awam seperti jalan raya, jambatan, sistem saliran dan kerja-kerja utiliti.</p>
                     </div>
-                    <div class="ppk-category-card">
-                        <div class="ppk-category-icon ppk-icon-mechanical">⚡</div>
-                        <h3>Mekanikal dan Elektrikal (ME)</h3>
-                        <p>Pemasangan dan penyelenggaraan sistem mekanikal dan elektrikal</p>
+                    <div class="ppk-content-box">
+                        <h4>Mekanikal dan Elektrikal (ME)</h4>
+                        <p>Pemasangan dan penyelenggaraan sistem mekanikal dan elektrikal dalam bangunan dan infrastruktur.</p>
                     </div>
-                    <div class="ppk-category-card">
-                        <div class="ppk-category-icon ppk-icon-facility">🔧</div>
-                        <h3>Fasiliti (F)</h3>
-                        <p>Pengurusan dan penyelenggaraan fasiliti bangunan</p>
+                    <div class="ppk-content-box">
+                        <h4>Fasiliti (F)</h4>
+                        <p>Pengurusan dan penyelenggaraan fasiliti bangunan termasuk pembersihan, keselamatan dan penyelenggaraan.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Info Boxes Section -->
-            <div class="ppk-info-section">
-                <div class="ppk-info-grid">
-                    <div class="ppk-info-box">
-                        <h3 class="ppk-info-title">Gred & Keupayaan</h3>
-                        <div class="ppk-grade-table">
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G1</span>
-                                <span class="ppk-limit">≤ RM200,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G2</span>
-                                <span class="ppk-limit">≤ RM500,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G3</span>
-                                <span class="ppk-limit">≤ RM1,000,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G4</span>
-                                <span class="ppk-limit">≤ RM3,000,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G5</span>
-                                <span class="ppk-limit">≤ RM5,000,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G6</span>
-                                <span class="ppk-limit">≤ RM10,000,000</span>
-                            </div>
-                            <div class="ppk-grade-row">
-                                <span class="ppk-grade">G7</span>
-                                <span class="ppk-limit">Tiada Had</span>
-                            </div>
-                        </div>
+            <!-- Grade & Capability Section -->
+            <section class="ppk-section">
+                <h2 class="ppk-section-title">Gred dan Keupayaan Tender</h2>
+                
+                <table class="ppk-table">
+                    <thead>
+                        <tr>
+                            <th>Gred</th>
+                            <th>Had Nilai Tender</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>G1</strong></td>
+                            <td>≤ RM200,000</td>
+                            <td>Projek kecil dan pembaikan minor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G2</strong></td>
+                            <td>≤ RM500,000</td>
+                            <td>Projek sederhana dan renovasi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G3</strong></td>
+                            <td>≤ RM1,000,000</td>
+                            <td>Projek pembinaan standard</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G4</strong></td>
+                            <td>≤ RM3,000,000</td>
+                            <td>Projek pembinaan besar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G5</strong></td>
+                            <td>≤ RM5,000,000</td>
+                            <td>Projek kompleks dan khusus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G6</strong></td>
+                            <td>≤ RM10,000,000</td>
+                            <td>Projek mega dan infrastruktur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>G7</strong></td>
+                            <td>Tiada Had</td>
+                            <td>Semua jenis projek tanpa had nilai</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Category Details Section -->
+            <section class="ppk-section">
+                <h2 class="ppk-section-title">Maklumat Kategori Terperinci</h2>
+                
+                <div class="ppk-content-grid">
+                    <div class="ppk-content-box">
+                        <h4>Kategori B (Bangunan)</h4>
+                        <p><strong>Permohonan Baru:</strong> Kategori B diberikan secara automatik kepada semua pemohon baru.</p>
+                        <p><strong>Skop Kerja:</strong> Pembinaan rumah, bangunan komersial, institusi dan industri.</p>
                     </div>
-
-                    <div class="ppk-info-box">
-                        <h3 class="ppk-info-title">Kategori</h3>
-                        <div class="ppk-category-details">
-                            <div class="ppk-category-item">
-                                <strong>B (Bangunan):</strong>
-                                <p>Untuk permohonan baru, kategori B diberikan secara automatik</p>
-                            </div>
-                            <div class="ppk-category-item">
-                                <strong>CE (Kejuruteraan Awam):</strong>
-                                <p>Diberikan untuk permohonan baru bersama kategori B</p>
-                            </div>
-                            <div class="ppk-category-item">
-                                <strong>ME (Mekanikal & Elektrikal):</strong>
-                                <p>Memerlukan personel teknikal berkelayakan</p>
-                            </div>
-                            <div class="ppk-category-item">
-                                <strong>F (Fasiliti):</strong>
-                                <p>Hanya untuk syarikat ROC/SKM/ROS Gred G4 ke atas</p>
-                            </div>
-                        </div>
+                    
+                    <div class="ppk-content-box">
+                        <h4>Kategori CE (Kejuruteraan Awam)</h4>
+                        <p><strong>Permohonan Baru:</strong> Diberikan bersama kategori B untuk permohonan baru.</p>
+                        <p><strong>Skop Kerja:</strong> Jalan raya, jambatan, terowong, lapangan terbang dan infrastruktur awam.</p>
                     </div>
-
-                    <div class="ppk-info-box">
-                        <h3 class="ppk-info-title">Pengkhususan</h3>
-                        <div class="ppk-specialization-info">
-                            <div class="ppk-spec-item">
-                                <strong>Permohonan Baru:</strong>
-                                <p>B04 dan CE21 diberikan secara automatik</p>
-                            </div>
-                            <div class="ppk-spec-item">
-                                <strong>M15:</strong>
-                                <p>Diberikan jika ada personel teknikal berkelayakan</p>
-                            </div>
-                            <div class="ppk-spec-item">
-                                <strong>F01/F02:</strong>
-                                <p>Memerlukan sijil akademik dan pengalaman fasiliti</p>
-                            </div>
-                            <div class="ppk-spec-item">
-                                <strong>Pengkhususan Lain:</strong>
-                                <p>Berdasarkan surat tawaran kerja atau sijil kecekapan</p>
-                            </div>
-                        </div>
+                    
+                    <div class="ppk-content-box">
+                        <h4>Kategori ME (Mekanikal & Elektrikal)</h4>
+                        <p><strong>Syarat:</strong> Memerlukan personel teknikal berkelayakan dalam bidang berkaitan.</p>
+                        <p><strong>Skop Kerja:</strong> Sistem penyaman udara, elektrik, paip, lif dan sistem mekanikal.</p>
+                    </div>
+                    
+                    <div class="ppk-content-box">
+                        <h4>Kategori F (Fasiliti)</h4>
+                        <p><strong>Syarat:</strong> Hanya untuk syarikat ROC/SKM/ROS yang telah mencapai Gred G4 ke atas.</p>
+                        <p><strong>Skop Kerja:</strong> Pengurusan fasiliti, pembersihan, keselamatan dan penyelenggaraan.</p>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Specialization Section -->
+            <section class="ppk-section">
+                <h2 class="ppk-section-title">Pengkhususan</h2>
+                
+                <h3 class="ppk-subsection-title">Pengkhususan Automatik untuk Permohonan Baru</h3>
+                <ul class="ppk-list">
+                    <li><strong>B04:</strong> Pembinaan bangunan am - diberikan secara automatik</li>
+                    <li><strong>CE21:</strong> Kerja-kerja am kejuruteraan awam - diberikan secara automatik</li>
+                    <li><strong>M15:</strong> Pemasangan jentera am - diberikan jika ada personel teknikal berkelayakan</li>
+                </ul>
+
+                <h3 class="ppk-subsection-title">Pengkhususan Fasiliti</h3>
+                <ul class="ppk-list">
+                    <li><strong>F01/F02:</strong> Memerlukan sijil akademik dan pengalaman dalam pengurusan fasiliti</li>
+                    <li><strong>Syarat Tambahan:</strong> Bukti pengalaman kerja dan sijil kecekapan berkaitan</li>
+                </ul>
+
+                <h3 class="ppk-subsection-title">Pengkhususan Lain</h3>
+                <p class="ppk-text-content">Pengkhususan tambahan diberikan berdasarkan:</p>
+                <ul class="ppk-list">
+                    <li>Surat tawaran kerja dari projek berkaitan</li>
+                    <li>Sijil kecekapan dalam bidang khusus</li>
+                    <li>Pengalaman kerja yang dapat dibuktikan</li>
+                    <li>Kelayakan akademik berkaitan</li>
+                </ul>
+            </section>
 
             <!-- Classification Status Section -->
-            <div class="ppk-classification-section">
+            <section class="ppk-section">
                 <h2 class="ppk-section-title">Status Pengkelasan</h2>
-                <div class="ppk-classification-grid">
-                    <div class="ppk-status-card ppk-status-new">
-                        <div class="ppk-status-icon">🆕</div>
-                        <h3>BARU</h3>
-                        <p>Kontraktor yang baru berdaftar</p>
+                
+                <div class="ppk-status-list">
+                    <div class="ppk-status-item">
+                        <h4>Status BARU</h4>
+                        <p>Kontraktor yang baru mendaftar dan belum mempunyai rekod projek yang lengkap. Status ini diberikan kepada syarikat yang baru memulakan operasi pembinaan.</p>
                     </div>
-                    <div class="ppk-status-card ppk-status-active">
-                        <div class="ppk-status-icon">✅</div>
-                        <h3>AKTIF</h3>
-                        <p>Kontraktor yang dianugerah projek dalam tempoh 3 tahun terkini</p>
+                    
+                    <div class="ppk-status-item">
+                        <h4>Status AKTIF</h4>
+                        <p>Kontraktor yang telah dianugerahkan dan melaksanakan projek dalam tempoh 3 tahun terkini. Menunjukkan syarikat yang aktif dalam industri pembinaan.</p>
                     </div>
-                    <div class="ppk-status-card ppk-status-inactive">
-                        <div class="ppk-status-icon">⏸️</div>
-                        <h3>TIDAK AKTIF</h3>
-                        <p>Kontraktor yang tidak dianugerah sebarang projek</p>
+                    
+                    <div class="ppk-status-item">
+                        <h4>Status TIDAK AKTIF</h4>
+                        <p>Kontraktor yang tidak dianugerahkan sebarang projek dalam tempoh yang ditetapkan. Perlu mengemaskini maklumat untuk kembali aktif.</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
+            <!-- Additional Information -->
+            <section class="ppk-section">
+                <h2 class="ppk-section-title">Maklumat Tambahan</h2>
+                
+                <h3 class="ppk-subsection-title">Syarat Asas Pendaftaran</h3>
+                <ul class="ppk-list">
+                    <li>Syarikat mesti diperbadankan di Malaysia</li>
+                    <li>Pegangan ekuiti tempatan minimum 70%</li>
+                    <li>Mempunyai modal berbayar yang mencukupi</li>
+                    <li>Personel teknikal berkelayakan untuk kategori tertentu</li>
+                </ul>
+
+                <h3 class="ppk-subsection-title">Dokumen Diperlukan</h3>
+                <ul class="ppk-list">
+                    <li>Borang SSM (Sijil Penubuhan Syarikat)</li>
+                    <li>Memorandum dan Artikel Pertubuhan</li>
+                    <li>Senarai Pengarah dan Pemegang Saham</li>
+                    <li>Penyata Kewangan Teraudit</li>
+                    <li>Sijil dan kelayakan personel teknikal</li>
+                </ul>
+
+                <h3 class="ppk-subsection-title">Proses Permohonan</h3>
+                <p class="ppk-text-content">Permohonan PPK boleh dibuat secara dalam talian melalui portal rasmi CIDB Malaysia. Pemohon perlu melengkapkan semua dokumen yang diperlukan dan membayar yuran pendaftaran yang ditetapkan.</p>
+            </section>
+        </div>
     </div>
+
     <?php include 'footer-cidb.php' ?>
 
     <script>
