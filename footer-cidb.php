@@ -82,20 +82,20 @@
         <div class="box disclaimer">
             <h3>DISCLAIMER</h3>
             <p>
-                MewahServicesCIDB @ A & N Management Resources (CT0097614P) adalah penyedia perkhidmatan pembaharuan Kad Personel Binaan & pendaftaran kontraktor dengan Lembaga Pembangunan Industri Pembinaan Malaysia (CIDB).
+                MewahServicesCIDB adalah penyedia perkhidmatan pembaharuan Kad Personel Binaan & pendaftaran kontraktor dengan Lembaga Pembangunan Industri Pembinaan Malaysia (CIDB).
             </p>
             <p>
                 Dengan melayari laman web ini, anda bersetuju dengan
                 <a href="#">Terms & Conditions</a>
-                dan membenarkan MewahServicesCIDB @ A & N Management Resources (CT0097614P) untuk menguruskan permohonan anda.
+                dan membenarkan MewahServicesCIDB untuk menguruskan permohonan anda.
             </p>
         </div>
 
         <div class="box services">
             <h3>Our Services</h3>
-            <a href="#">CIDB Green Card Registration</a>
-            <a href="#">CIDB Green Card Renewal</a>
-            <a href="#">Consulting Services</a>
+            <a href="daftar-baru-cidb.php">CIDB Green Card Registration</a>
+            <a href="renew-kad-cidb.php">CIDB Green Card Renewal</a>
+            <a href="card-cidb.php">Consulting Services</a>
         </div>
 
         <div class="box contact-info">

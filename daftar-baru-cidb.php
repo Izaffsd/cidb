@@ -246,7 +246,7 @@
     <section class="home1" id="home1">
         <img src="kad-cidb.jpg" alt="Home background" class="background-image1">
         <div class="content1">
-            <h2>Daftar Kad Hijau CIDB + Kursus (Baru)</h2>
+            <h1>Daftar Kad Hijau CIDB + Kursus (Baru)</h1>
             <p>Berikut dinyatakan senarai bagi pendaftaran baru kad hijau CIDB bagi sesiapa yang tidak pernah ada CIDB sebelum in</p>
         </div>
     </section>

@@ -30,7 +30,7 @@
             srcset="kad-cidb-sm.jpg 300w, kad-cidb-md.jpg 600w, kad-cidb.jpg 1200w"
             sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1200px">
         <div class="content">
-            <h2>Segera Perbaharui Kad Hijau CIDB Anda!</h2>
+            <h1>Segera Perbaharui Kad Hijau CIDB Anda!</h1>
             <p>Pakar dalam pendaftaran dan pembaharuan Kad Hijau CIDB Malaysia sejak 2018!</p>
             <span>Hubungi kami sekarang untuk bantuan segera!</span>
             <div class="btn-container">
@@ -67,7 +67,7 @@
                 <div class="list-container">
                     <h3>Consultation Services</h3>
                     <ul>
-                        <li>✓ Pendaftaran & Pembaharuan Kad Hijau CIDB</li>
+                        <li>Pendaftaran & Pembaharuan Kad Hijau CIDB</li>
                         <li>Pendaftaran & Pembaharuan Lesen CIDB G1-G7</li>
                         <li>Pendaftaran & Pembaharuan Lesen MOF</li>
                         <li>Pendaftaran & Pembaharuan SPKK & STB</li>

@@ -179,7 +179,7 @@
     <section class="home1" id="home1">
         <img src="kad-cidb.jpg" alt="Home background" class="background-image1">
         <div class="content1">
-            <h2>Renew Kad CIDB</h2>
+            <h1>Renew Kad CIDB</h1>
             <p>Maklumat dan prosedur pembaharuan Kad Personel Binaan CIDB untuk pekerja tempatan</p>     
         </div>
     </section>

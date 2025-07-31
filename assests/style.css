@@ -403,7 +403,7 @@ header .navbar li .nested-dropdown-menu a:hover {
     border-radius: 12px;
 }
 
-.home .content h2 {
+.home .content h1 {
     font-size: 3.8rem;
     color: var(--maing); /* Main color for the title */
     font-weight: bold;
@@ -485,7 +485,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         padding: 2.8rem;
         margin: 6rem 0;
     }
-    .home .content h2 {
+    .home .content h1 {
         font-size: 3.1rem;
     }
 
@@ -519,7 +519,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         width: 70%; /* Smaller image for very small screens */
     }
 
-    .home .content h2 {
+    .home .content h1 {
         font-size: 2.9rem; /* Smaller heading for better fit */
     }
 
@@ -2405,7 +2405,7 @@ header .navbar li .nested-dropdown-menu a:hover {
     border-radius: 12px;
 }
 
-.home1 .content1 h2 {
+.home1 .content1 h1 {
     font-size: 3.8rem;
     color: var(--maing); /* Main color for the title */
     font-weight: bold;
@@ -2573,7 +2573,7 @@ header .navbar li .nested-dropdown-menu a:hover {
         max-width: 700px;
     }
     
-    .home1 .content1 h2 {
+    .home1 .content1 h1 {
         font-size: 3.2rem;
     }
 
@@ -2587,7 +2587,7 @@ header .navbar li .nested-dropdown-menu a:hover {
     .cidb-info-section .container {
         padding: 0 1rem;
     }
-    .home1 .content1 h2 {
+    .home1 .content1 h1 {
         font-size: 2.7rem; /* Smaller heading for better fit */
     }
 

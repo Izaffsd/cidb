@@ -9,22 +9,22 @@
   <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
   <link rel="stylesheet" href="iktirafan-sijil.css">
+
   <link rel="stylesheet" href="assests/style.css">
 <?php include 'seo.php' ?>
-
 <?php renderSEOHead(); ?>
 </head>
 
 <body>
 <?php renderSEOSchemas(); ?>
 <?php getSEOH1(); ?>
-  <?php include 'header-cidb.php'; ?>
+<?php include 'header-cidb.php'; ?>
   <!-- Hero Section -->
   <section class="home1" id="home1">
     <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
     <div class="content1">
-      <h2>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB</h2>
-      <p>Panduan Lengkap untuk Persediaan Dokumen Permohonan, Pembaharuan, atau Perubahan Maklumat</p>
+      <h1>Perkhidmatan Pendaftaran Lesen Kontraktor Berdaftar</h1>
+      <p>Pendaftaran dan perolehan lesen yang diperlukan oleh kontraktor untuk menjalankan aktiviti pembinaan di Malaysia.</p>
     </div>
   </section>
 

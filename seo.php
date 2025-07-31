@@ -27,7 +27,6 @@ class CIDBKadHijauSEO {
         'instagram' => 'https://www.instagram.com/mewahservices',
         'facebook' => 'https://www.facebook.com/cidbgreencardmewah/',
         'tiktok' => 'https://www.tiktok.com/@mewahservices',
-        'youtube' => 'https://www.youtube.com/@mewahservices'
     ];
     
     private $pageData = [];
@@ -558,7 +557,7 @@ class CIDBKadHijauSEO {
     
     public function renderSocialMediaLinks() {
         echo "\n<!-- Social Media Links -->\n";
-        echo '<div class="social-media-links" style="display: flex; gap: 10px; align-items: center;">' . "\n";
+        echo '<div class="social-media-links" style="display: flex; gap: 10px; align-items: center; display: none;">' . "\n";
         foreach ($this->socialMedia as $platform => $url) {
             $platformName = ucfirst($platform);
             echo '<a href="' . $url . '" target="_blank" rel="noopener nofollow" aria-label="Follow us on ' . $platformName . '" class="social-link ' . $platform . '">' . "\n";

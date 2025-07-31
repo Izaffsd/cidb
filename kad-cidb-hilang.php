@@ -168,7 +168,7 @@
     <section class="home1" id="home1">
         <img src="kad-cidb.jpg" alt="Home background" class="background-image1">
         <div class="content1">
-            <h2>Gantian Kad CIDB</h2>
+            <h1>Gantian Kad CIDB</h1>
             <p>Maklumat dan prosedur penggantian Kad Personel Binaan CIDB yang hilang atau rosak</p>     
         </div>
     </section>
