@@ -7,6 +7,7 @@
     <title>CIDB Malaysia - Program Pembangunan Kontraktor Secara Berterusan</title>
     <link rel="stylesheet" href="assests/style.css">
     <link rel="stylesheet" href="mata-cidb.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-cidb-mewah.png">
 
     <?php include 'seo.php' ?>
     <?php renderSEOHead(); ?>

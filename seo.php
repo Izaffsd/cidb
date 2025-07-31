@@ -61,7 +61,7 @@ class CIDBKadHijauSEO {
         $this->pageData = [
             'home' => [
                 'title' => 'CIDB Kad Hijau Malaysia | Renew, Daftar & Ganti Online | Pantas & Murah 2025',
-                'description' => 'Servis CIDB Kad Hijau terbaik Malaysia! ✓ Renew kad hijau online ✓ Daftar baru ✓ Kad rosak/hilang ✓ Sijil bumiputera ✓ Proses pantas 1-3 hari ✓ Harga berpatutan ✓ WhatsApp +601126165376',
+                'description' => 'KAD PERSONEL BINAAN / KAD HIJAU CIDB. ✓ Renew kad hijau online ✓ Daftar baru ✓ Kad rosak/hilang ✓ Sijil bumiputera ✓ Harga berpatutan ✓ WhatsApp +601126165376',
                 'keywords' => 'cidb kad hijau, kad hijau rosak, renew kad hijau, kad hijau hilang, daftar kad hijau, kad hijau malaysia, ganti kad hijau, cidb online, kad personel binaan, sijil bumiputera cidb, cidb card renewal malaysia, pembaharuan kad hijau',
                 'canonical' => $this->siteUrl,
                 'h1' => 'CIDB Kad Hijau Malaysia - Renew, Daftar & Ganti Online | Servis Terpantas 2025',
@@ -279,10 +279,10 @@ class CIDBKadHijauSEO {
         echo '<meta name="keywords" content="' . htmlspecialchars($page['keywords']) . '">' . "\n";
         echo '<link rel="canonical" href="' . htmlspecialchars($page['canonical']) . '">' . "\n";
         
-        // Fixed favicon - using your icon.png
-        echo '<link rel="icon" type="image/png" sizes="32x32" href="icon.png">' . "\n";
-        echo '<link rel="icon" type="image/png" sizes="16x16" href="icon.png">' . "\n";
-        echo '<link rel="apple-touch-icon" href="icon.png">' . "\n";
+        // Fixed favicon - using your icon-cidb-mewah.png
+        echo '<link rel="icon" type="image/png" sizes="32x32" href="icon-cidb-mewah.png">' . "\n";
+        echo '<link rel="icon" type="image/png" sizes="16x16" href="icon-cidb-mewah.png">' . "\n";
+        echo '<link rel="apple-touch-icon" href="icon-cidb-mewah.png">' . "\n";
         
         // Enhanced meta tags
         echo '<meta name="author" content="' . htmlspecialchars($this->siteName) . '">' . "\n";
@@ -309,7 +309,7 @@ class CIDBKadHijauSEO {
         echo '<meta property="og:type" content="website">' . "\n";
         echo '<meta property="og:site_name" content="' . htmlspecialchars($this->siteName) . '">' . "\n";
         echo '<meta property="og:locale" content="ms_MY">' . "\n";
-        echo '<meta property="og:image" content="' . $this->siteUrl . '/icon.png">' . "\n";
+        echo '<meta property="og:image" content="' . $this->siteUrl . '/icon-cidb-mewah.png">' . "\n";
         echo '<meta property="og:image:width" content="512">' . "\n";
         echo '<meta property="og:image:height" content="512">' . "\n";
         
@@ -317,7 +317,7 @@ class CIDBKadHijauSEO {
         echo '<meta name="twitter:card" content="summary">' . "\n";
         echo '<meta name="twitter:title" content="' . htmlspecialchars($page['title']) . '">' . "\n";
         echo '<meta name="twitter:description" content="' . htmlspecialchars($page['description']) . '">' . "\n";
-        echo '<meta name="twitter:image" content="' . $this->siteUrl . '/icon.png">' . "\n";
+        echo '<meta name="twitter:image" content="' . $this->siteUrl . '/icon-cidb-mewah.png">' . "\n";
         
         // Robots directives
         echo '<meta name="robots" content="index, follow, max-image-preview:large">' . "\n";
@@ -423,7 +423,7 @@ class CIDBKadHijauSEO {
             "@type" => "Organization",
             "name" => $this->siteName,
             "url" => $this->siteUrl,
-            "logo" => $this->siteUrl . "/icon.png",
+            "logo" => $this->siteUrl . "/icon-cidb-mewah.png",
             "description" => "Leading CIDB Kad Hijau service provider in Malaysia",
             "telephone" => $this->businessPhone,
             "email" => $this->businessEmail,
@@ -447,7 +447,7 @@ class CIDBKadHijauSEO {
                 "name" => $this->siteName,
                 "logo" => [
                     "@type" => "ImageObject",
-                    "url" => $this->siteUrl . "/icon.png"
+                    "url" => $this->siteUrl . "/icon-cidb-mewah.png"
                 ]
             ],
             "datePublished" => date('c'),

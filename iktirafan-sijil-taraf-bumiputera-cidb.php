@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Senarai Semak Pengiktirafan Taraf Bumiputera (STB) CIDB - Panduan Permohonan</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon-cidb-mewah.png">
   <script src="https://kit.fontawesome.com/0ede200358.js" crossorigin="anonymous" defer></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css" rel="stylesheet">
   <link rel="stylesheet" href="iktirafan-sijil.css">
