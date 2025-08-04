@@ -597,8 +597,8 @@
     <section class="home1" id="home1">
         <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
         <div class="content1">
-            <h1>Perakuan Pendaftaran Kontraktor Tempatan (PPK)</h1>
-            <p>Panduan Lengkap Pendaftaran Kontraktor di Malaysia — Proses, Syarat Kelayakan, Kategori PPK, Dokumen Sokongan dan Tatacara Permohonan untuk Syarikat Tempatan.</p>
+            <h1>Perkhidmatan Pendaftaran Lesen Kontraktor Berdaftar</h1>
+            <p>Pendaftaran dan perolehan lesen yang diperlukan oleh kontraktor untuk menjalankan aktiviti pembinaan di Malaysia.</p>
         </div>
     </section>
 
