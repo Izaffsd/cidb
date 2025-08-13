@@ -23,7 +23,7 @@
   <section class="home1" id="home1">
     <img src="assests\images\life\sijil.jpg" alt="Home background" class="background-image1">
     <div class="content1">
-      <h1>Perkhidmatan Pendaftaran Lesen Kontraktor Berdaftar</h1>
+      <h1>Pendaftaran Sijil Taraf Bumiputera (STB)</h1>
       <p>Pendaftaran dan perolehan lesen yang diperlukan oleh kontraktor untuk menjalankan aktiviti pembinaan di Malaysia.</p>
     </div>
   </section>
