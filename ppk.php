@@ -823,7 +823,7 @@
                 </ul>
 
                 <h3 class="ppk-subsection-title">Proses Permohonan</h3>
-                <p class="ppk-text-content">Permohonan PPK boleh dibuat secara dalam talian melalui portal rasmi CIDB Malaysia. Pemohon perlu melengkapkan semua dokumen yang diperlukan dan membayar yuran pendaftaran yang ditetapkan.</p>
+                <p class="ppk-text-content">Sila hubungi pihak kami di nombor tertera dan lampirkan dokumen pada kami untuk semak kemudian proses.</p>
             </section>
         </div>
     </div>
